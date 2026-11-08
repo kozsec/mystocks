@@ -61,7 +61,7 @@ function makeLineChart(canvas, labels, values, color, fill = false) {
   return chart;
 }
 
-function buildPortfolioHistory(holdings, history) {
+function buildPortfolioHistory(holdings, history, cashValue) {
   const totals = new Map();
   for (const stock of holdings) {
     const shares = Number(stock.shares);
@@ -73,11 +73,11 @@ function buildPortfolioHistory(holdings, history) {
     }
   }
   const labels = [...totals.keys()].sort();
-  return { labels, values: labels.map(date => totals.get(date)) };
+  return { labels, values: labels.map(date => totals.get(date) + cashValue) };
 }
 
-function renderSummary(holdings, prices) {
-  let totalValue = 0;
+function renderSummary(holdings, prices, cashAssets) {
+  let stockValue = 0;
   let totalCost = 0;
   let valuedCount = 0;
   let missingCount = 0;
@@ -87,20 +87,38 @@ function renderSummary(holdings, prices) {
     if (!price) missingCount++;
     if (!Number.isFinite(shares) || shares <= 0 || !price) continue;
     const averageCost = Number(stock.average_cost);
-    totalValue += Number(price.close) * shares;
+    stockValue += Number(price.close) * shares;
     if (Number.isFinite(averageCost) && averageCost > 0) totalCost += averageCost * shares;
     valuedCount++;
   }
-  const profit = totalValue - totalCost;
+  const cashValue = cashAssets.reduce((sum, asset) => sum + Number(asset.amount || 0), 0);
+  const totalValue = stockValue + cashValue;
+  const profit = stockValue - totalCost;
   const rate = totalCost > 0 ? profit / totalCost * 100 : null;
   byId("totalValue").textContent = yen(totalValue);
+  byId("stockValue").textContent = yen(stockValue);
+  byId("cashValue").textContent = yen(cashValue);
   byId("totalCost").textContent = yen(totalCost);
   byId("totalProfit").textContent = signedYen(profit);
   byId("totalProfit").className = "summary-value " + (profit >= 0 ? "positive" : "negative");
   byId("profitRate").textContent = rate == null ? "—" : `${rate >= 0 ? "+" : ""}${rate.toFixed(2)}%`;
-  byId("valuedCount").textContent = `評価対象 ${valuedCount} 銘柄`;
   byId("stockCount").textContent = `${holdings.length} 銘柄`;
-  byId("missingCount").textContent = `株価未取得 ${missingCount} 銘柄`;
+  byId("valuedCount").textContent = `評価対象 ${valuedCount} 銘柄 / 株価未取得 ${missingCount}`;
+}
+
+function renderCashTable(cashAssets) {
+  const body = byId("cashTable");
+  body.replaceChildren();
+  for (const asset of cashAssets) {
+    const tr = document.createElement("tr");
+    const name = document.createElement("td");
+    name.textContent = asset.name;
+    const amount = document.createElement("td");
+    amount.textContent = yen(Number(asset.amount));
+    tr.append(name, amount);
+    body.append(tr);
+  }
+  byId("cashTotal").textContent = yen(cashAssets.reduce((sum, asset) => sum + Number(asset.amount || 0), 0));
 }
 
 function renderStockCharts(holdings, prices, histories) {
@@ -210,6 +228,8 @@ async function init() {
     const pricesData = pricesResponse.ok ? await pricesResponse.json() : { prices: {} };
     const historyData = historyResponse.ok ? await historyResponse.json() : { stocks: {} };
     const holdings = holdingsData.stocks || [];
+    const cashAssets = holdingsData.cash_assets || [];
+    const cashValue = cashAssets.reduce((sum, asset) => sum + Number(asset.amount || 0), 0);
     const prices = pricesData.prices || {};
     const histories = historyData.stocks || {};
 
@@ -217,11 +237,12 @@ async function init() {
       ? `最終更新 ${new Date(pricesData.updated_at).toLocaleString("ja-JP")}`
       : "株価データ未更新";
 
-    renderSummary(holdings, prices);
+    renderSummary(holdings, prices, cashAssets);
+    renderCashTable(cashAssets);
     renderTable(holdings, prices);
     renderStockCharts(holdings, prices, histories);
 
-    const portfolio = buildPortfolioHistory(holdings, histories);
+    const portfolio = buildPortfolioHistory(holdings, histories, cashValue);
     if (portfolio.labels.length) {
       makeLineChart(byId("portfolioChart"), portfolio.labels, portfolio.values, "#66a7ff", true);
     } else {
