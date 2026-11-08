@@ -163,9 +163,7 @@ function renderStockCharts(holdings, prices, histories) {
     nameBlock.querySelector(".stock-ticker").textContent = stock.ticker;
     const priceBlock = document.createElement("div");
     priceBlock.className = "stock-price";
-    priceBlock.innerHTML = `<span></span><small></small>`;
-    priceBlock.querySelector("span").textContent = price ? yen(Number(price.close)) : "株価なし";
-    priceBlock.querySelector("small").textContent = price ? `終値 ${price.date}` : "データ未取得";
+    priceBlock.textContent = price ? yen(Number(price.close)) : "株価なし";
     head.append(nameBlock, priceBlock);
 
     const chartWrap = document.createElement("div");
@@ -174,24 +172,7 @@ function renderStockCharts(holdings, prices, histories) {
     canvas.setAttribute("aria-label", `${stock.name}の株価推移`);
     chartWrap.append(canvas);
 
-    const meta = document.createElement("div");
-    meta.className = "stock-meta";
-    const latestClose = price ? Number(price.close) : null;
-    const averageCost = Number(stock.average_cost);
-    const shares = Number(stock.shares);
-    let profitText = "取得単価 —";
-    if (Number.isFinite(averageCost) && averageCost > 0 && latestClose != null) {
-      const diff = (latestClose - averageCost) * (Number.isFinite(shares) ? shares : 0);
-      profitText = `取得単価 ${yen(averageCost)}`;
-      if (Number.isFinite(shares) && shares > 0) {
-        profitText += ` / 損益 ${signedYen(diff)}`;
-      }
-    }
-    meta.innerHTML = `<span></span><span></span>`;
-    meta.children[0].textContent = "";
-    meta.children[1].textContent = profitText;
-
-    card.append(head, chartWrap, meta);
+    card.append(head, chartWrap);
     container.append(card);
     if (rows.length) {
       const sorted = [...rows].sort((a, b) => a.date.localeCompare(b.date));
@@ -220,10 +201,12 @@ function renderTable(holdings, prices) {
     const {stock, shares, averageCost, close, validShares, value, profit} = row;
     const tr = document.createElement("tr");
     const name = document.createElement("td");
-    name.innerHTML = `<div class="stock-cell-name"></div><div class="stock-cell-ticker"></div>`;
-    name.querySelector(".stock-cell-name").textContent = stock.name;
-    name.querySelector(".stock-cell-ticker").textContent = stock.ticker;
-    tr.append(name);
+    name.className = "stock-cell-name";
+    name.textContent = stock.name;
+    const ticker = document.createElement("td");
+    ticker.className = "stock-cell-ticker";
+    ticker.textContent = stock.ticker;
+    tr.append(name, ticker);
     const purposeCell = document.createElement("td");
     purposeCell.textContent = stock.purpose || "未設定";
     tr.append(purposeCell);
@@ -287,7 +270,7 @@ async function init() {
     }
   } catch (error) {
     byId("updatedAt").textContent = "読み込みエラー";
-    byId("holdingsTable").innerHTML = `<tr><td colspan="7" class="loading-cell">${error.message}</td></tr>`;
+    byId("holdingsTable").innerHTML = `<tr><td colspan="8" class="loading-cell">${error.message}</td></tr>`;
     byId("portfolioEmpty").hidden = false;
     byId("portfolioEmpty").textContent = "履歴データを読み込めません。GitHub Actionsの実行結果と data/portfolio_history.json を確認してください。";
   }
