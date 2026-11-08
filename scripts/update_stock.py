@@ -21,7 +21,7 @@ def load_holdings():
     if not stocks:
         raise ValueError("data/holdings.json に銘柄が登録されていません。")
 
-    return stocks
+    return holdings
 
 
 def fetch_stock(stock):
@@ -67,7 +67,8 @@ def fetch_stock(stock):
 
 
 def main():
-    stocks = load_holdings()
+    holdings = load_holdings()
+    stocks = holdings.get("stocks", [])
     prices = {}
     histories = {}
     failures = []
