@@ -43,9 +43,9 @@
         <div class="summary-foot" id="valuedCount">評価対象 -- 銘柄</div>
       </article>
       <article class="summary-card">
-        <div class="summary-label">現金・預金</div>
+        <div class="summary-label">CASH &amp; DEPOSITS</div>
         <div class="summary-value" id="cashValue">--</div>
-        <div class="summary-foot">預金＋定期預金</div>
+        <div class="cash-breakdown" id="cashBreakdown"></div>
       </article>
       <article class="summary-card">
         <div class="summary-label">株式取得総額</div>
@@ -57,22 +57,6 @@
         <div class="summary-value" id="totalProfit">--</div>
         <div class="summary-foot" id="profitRate">--</div>
       </article>
-    </section>
-
-    <section class="panel holdings-panel cash-panel">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">CASH & DEPOSITS</p>
-          <h2>現金・預金</h2>
-        </div>
-        <span class="period-label" id="cashTotal">--</span>
-      </div>
-      <div class="table-scroll">
-        <table>
-          <thead><tr><th>資産区分</th><th>残高</th></tr></thead>
-          <tbody id="cashTable"></tbody>
-        </table>
-      </div>
     </section>
 
     <section class="panel portfolio-panel">
@@ -112,7 +96,6 @@
         <table>
           <thead>
             <tr>
-              <th>口座</th>
               <th>銘柄</th>
               <th>投資目的</th>
               <th>保有株数</th>
@@ -123,11 +106,10 @@
             </tr>
           </thead>
           <tbody id="holdingsTable">
-            <tr><td colspan="8" class="loading-cell">データを読み込んでいます...</td></tr>
+            <tr><td colspan="7" class="loading-cell">データを読み込んでいます...</td></tr>
           </tbody>
         </table>
       </div>
-      <p class="table-note">※ 総資産評価額の推移には、現在の現金・預金残高を過去の各日に一定額として加算しています。</p>
     </section>
 
     <footer>
