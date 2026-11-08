@@ -5,6 +5,7 @@
       "name": "トーメンデバイス",
       "shares": 100,
       "average_cost": 5460,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -12,6 +13,7 @@
       "name": "東京エレクトロン",
       "shares": 500,
       "average_cost": 7357,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -19,20 +21,23 @@
       "name": "マクドナルド",
       "shares": 100,
       "average_cost": 5061,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
       "ticker": "8591.T",
       "name": "オリックス",
-      "shares": 300,
-      "average_cost": 2272.3333333333335,
+      "shares": 100,
+      "average_cost": 1917,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
       "ticker": "9433.T",
       "name": "KDDI",
-      "shares": 600,
-      "average_cost": 1822.3333333333333,
+      "shares": 200,
+      "average_cost": 1467,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -40,6 +45,7 @@
       "name": "名糖産業",
       "shares": 100,
       "average_cost": 2041,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -47,6 +53,7 @@
       "name": "理研ビタミン",
       "shares": 100,
       "average_cost": 1415,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -54,6 +61,7 @@
       "name": "パイロット",
       "shares": 300,
       "average_cost": 1617,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -61,6 +69,7 @@
       "name": "エクシオ",
       "shares": 200,
       "average_cost": 1531,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -68,13 +77,15 @@
       "name": "北海道コカコーラ",
       "shares": 100,
       "average_cost": 2633,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
       "ticker": "3003.T",
       "name": "ヒューリック",
-      "shares": 400,
-      "average_cost": 1468.75,
+      "shares": 300,
+      "average_cost": 1465,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -82,6 +93,7 @@
       "name": "日本管財",
       "shares": 100,
       "average_cost": 1789,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -89,6 +101,7 @@
       "name": "モスフードサービス",
       "shares": 100,
       "average_cost": 3444,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -96,6 +109,7 @@
       "name": "イトーキ",
       "shares": 100,
       "average_cost": 1600,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -103,6 +117,7 @@
       "name": "NECキャピタルソリューション",
       "shares": 100,
       "average_cost": 3295,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -110,6 +125,7 @@
       "name": "伊藤ハム",
       "shares": 200,
       "average_cost": 4216,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -117,6 +133,7 @@
       "name": "サカタのタネ",
       "shares": 100,
       "average_cost": 3618,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -124,6 +141,7 @@
       "name": "エーアイティー",
       "shares": 100,
       "average_cost": 1696,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -131,13 +149,15 @@
       "name": "ダイショー",
       "shares": 100,
       "average_cost": 912,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
       "ticker": "4923.T",
       "name": "コタ",
-      "shares": 300,
-      "average_cost": 936.6666666666666,
+      "shares": 100,
+      "average_cost": 588,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -145,6 +165,7 @@
       "name": "NSD",
       "shares": 100,
       "average_cost": 2721,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -152,6 +173,7 @@
       "name": "ヤマハ発動機",
       "shares": 100,
       "average_cost": 1433,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -159,6 +181,7 @@
       "name": "インテージ",
       "shares": 100,
       "average_cost": 1642,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -166,6 +189,7 @@
       "name": "ホクト",
       "shares": 100,
       "average_cost": 1877,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -173,6 +197,7 @@
       "name": "7&iホールディングス",
       "shares": 100,
       "average_cost": 2026,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -180,6 +205,7 @@
       "name": "コメダ",
       "shares": 100,
       "average_cost": 2832,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -187,6 +213,7 @@
       "name": "三井不動産",
       "shares": 100,
       "average_cost": 1539,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -194,6 +221,7 @@
       "name": "ABCマート",
       "shares": 100,
       "average_cost": 3140,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -201,6 +229,7 @@
       "name": "井村屋",
       "shares": 100,
       "average_cost": 2320,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -208,6 +237,7 @@
       "name": "エバラ食品",
       "shares": 100,
       "average_cost": 2708,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -215,6 +245,7 @@
       "name": "キッコーマン",
       "shares": 100,
       "average_cost": 1991,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -222,6 +253,7 @@
       "name": "プロネクサス",
       "shares": 100,
       "average_cost": 1321,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -229,6 +261,7 @@
       "name": "任天堂",
       "shares": 100,
       "average_cost": 8534,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -236,6 +269,7 @@
       "name": "信越化学工業",
       "shares": 200,
       "average_cost": 5829,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -243,6 +277,7 @@
       "name": "日清食品",
       "shares": 100,
       "average_cost": 4217,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -250,6 +285,7 @@
       "name": "スクリーン",
       "shares": 200,
       "average_cost": 5217,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -257,6 +293,7 @@
       "name": "かどや",
       "shares": 200,
       "average_cost": 1485,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -264,6 +301,7 @@
       "name": "吉野家",
       "shares": 200,
       "average_cost": 2910,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -271,6 +309,7 @@
       "name": "コカコーラ",
       "shares": 100,
       "average_cost": 2300,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -278,6 +317,7 @@
       "name": "note",
       "shares": 100,
       "average_cost": 1273,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -285,6 +325,7 @@
       "name": "ニップン",
       "shares": 200,
       "average_cost": 2270,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -292,6 +333,7 @@
       "name": "明治",
       "shares": 100,
       "average_cost": 3103,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -299,6 +341,7 @@
       "name": "ワールド",
       "shares": 1000,
       "average_cost": 1340,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -306,6 +349,7 @@
       "name": "ダスキン",
       "shares": 100,
       "average_cost": 3744,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -313,6 +357,7 @@
       "name": "キリン",
       "shares": 100,
       "average_cost": 1995,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -320,6 +365,7 @@
       "name": "マキタ",
       "shares": 100,
       "average_cost": 4944,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -327,6 +373,7 @@
       "name": "積水ハウス",
       "shares": 100,
       "average_cost": 3300,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -334,6 +381,7 @@
       "name": "しまむら",
       "shares": 100,
       "average_cost": 3260,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -341,6 +389,7 @@
       "name": "フルキャストHD",
       "shares": 100,
       "average_cost": 1785,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -348,6 +397,7 @@
       "name": "ラクトジャパン",
       "shares": 100,
       "average_cost": 3390,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -355,6 +405,7 @@
       "name": "住友化学",
       "shares": 100,
       "average_cost": 494,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -362,6 +413,7 @@
       "name": "PRTIMES",
       "shares": 100,
       "average_cost": 2225,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -369,6 +421,7 @@
       "name": "デンソー",
       "shares": 100,
       "average_cost": 2200,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -376,6 +429,7 @@
       "name": "JINS HD",
       "shares": 100,
       "average_cost": 6200,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -383,6 +437,7 @@
       "name": "チェンジHD",
       "shares": 300,
       "average_cost": 999,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -390,6 +445,7 @@
       "name": "インソース",
       "shares": 100,
       "average_cost": 1060,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -397,6 +453,7 @@
       "name": "オルガノ",
       "shares": 100,
       "average_cost": 1720,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -404,6 +461,7 @@
       "name": "AGC",
       "shares": 100,
       "average_cost": 5360,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -411,6 +469,7 @@
       "name": "ディップ",
       "shares": 100,
       "average_cost": 2752,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -418,6 +477,7 @@
       "name": "MSOL",
       "shares": 200,
       "average_cost": 2240,
+      "account": "メイン口座",
       "purpose": "その他"
     },
     {
@@ -425,6 +485,15 @@
       "name": "栗田工業",
       "shares": 100,
       "average_cost": 6465,
+      "account": "メイン口座",
+      "purpose": "その他"
+    },
+    {
+      "ticker": "4923.T",
+      "name": "コタ",
+      "shares": 200,
+      "average_cost": 1111,
+      "account": "別口座",
       "purpose": "その他"
     },
     {
@@ -432,6 +501,31 @@
       "name": "タカラトミー",
       "shares": 100,
       "average_cost": 1815,
+      "account": "別口座",
+      "purpose": "その他"
+    },
+    {
+      "ticker": "8591.T",
+      "name": "オリックス",
+      "shares": 200,
+      "average_cost": 2450,
+      "account": "別口座",
+      "purpose": "その他"
+    },
+    {
+      "ticker": "9433.T",
+      "name": "KDDI",
+      "shares": 400,
+      "average_cost": 2000,
+      "account": "別口座",
+      "purpose": "その他"
+    },
+    {
+      "ticker": "3003.T",
+      "name": "ヒューリック",
+      "shares": 100,
+      "average_cost": 1480,
+      "account": "別口座",
       "purpose": "その他"
     },
     {
@@ -439,6 +533,7 @@
       "name": "学研HD",
       "shares": 100,
       "average_cost": 865,
+      "account": "別口座",
       "purpose": "その他"
     }
   ],
