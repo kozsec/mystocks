@@ -72,6 +72,37 @@ function makeLineChart(canvas, labels, values, color, fill = false, averageCost 
   return chart;
 }
 
+function groupHoldings(holdings) {
+  const grouped = new Map();
+  for (const stock of holdings) {
+    const shares = Number(stock.shares) || 0;
+    const averageCost = Number(stock.average_cost) || 0;
+    let item = grouped.get(stock.ticker);
+    if (!item) {
+      item = {
+        ticker: stock.ticker,
+        name: stock.name,
+        shares: 0,
+        totalCost: 0,
+        purposes: []
+      };
+      grouped.set(stock.ticker, item);
+    }
+    item.shares += shares;
+    item.totalCost += shares * averageCost;
+    if (stock.purpose && !item.purposes.includes(stock.purpose)) {
+      item.purposes.push(stock.purpose);
+    }
+  }
+  return [...grouped.values()].map(stock => ({
+    ticker: stock.ticker,
+    name: stock.name,
+    shares: stock.shares,
+    average_cost: stock.shares > 0 ? stock.totalCost / stock.shares : null,
+    purpose: stock.purposes.length ? stock.purposes.join("・") : "未設定"
+  }));
+}
+
 function renderSummary(holdings, prices, cashAssets) {
   let stockValue = 0;
   let totalCost = 0;
@@ -228,6 +259,7 @@ async function init() {
     const historyData = historyResponse.ok ? await historyResponse.json() : { stocks: {} };
     const portfolioHistoryData = portfolioHistoryResponse.ok ? await portfolioHistoryResponse.json() : { daily: [] };
     const holdings = holdingsData.stocks || [];
+    const displayHoldings = groupHoldings(holdings);
     const cashAssets = holdingsData.cash_assets || [];
     const cashValue = cashAssets.reduce((sum, asset) => sum + Number(asset.amount || 0), 0);
     const prices = pricesData.prices || {};
@@ -237,10 +269,10 @@ async function init() {
       ? `最終更新 ${new Date(pricesData.updated_at).toLocaleString("ja-JP")}`
       : "株価データ未更新";
 
-    renderSummary(holdings, prices, cashAssets);
+    renderSummary(displayHoldings, prices, cashAssets);
     renderCashBreakdown(cashAssets);
-    renderTable(holdings, prices);
-    renderStockCharts(holdings, prices, histories);
+    renderTable(displayHoldings, prices);
+    renderStockCharts(displayHoldings, prices, histories);
 
     const daily = portfolioHistoryData.daily || [];
     if (daily.length) {
