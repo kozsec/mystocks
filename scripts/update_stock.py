@@ -1,5 +1,5 @@
 import json
-from datetime import datetime, timezone
+from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parent.parent
 HOLDINGS_FILE = ROOT / "data" / "holdings.json"
 PRICES_FILE = ROOT / "data" / "prices.json"
 HISTORY_FILE = ROOT / "data" / "history.json"
+PORTFOLIO_HISTORY_FILE = ROOT / "data" / "portfolio_history.json"
 HISTORY_PERIOD = "1y"
 
 
@@ -119,6 +120,36 @@ def main():
     )
     HISTORY_FILE.write_text(
         json.dumps(history_output, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+    portfolio_history = {"updated_at": None, "daily": []}
+    if PORTFOLIO_HISTORY_FILE.exists():
+        try:
+            portfolio_history = json.loads(PORTFOLIO_HISTORY_FILE.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            pass
+
+    today = datetime.now(ZoneInfo("Asia/Tokyo")).date().isoformat()
+    stock_total = sum(
+        float(prices[stock["ticker"]]["close"]) * float(stock.get("shares", 0) or 0)
+        for stock in stocks if stock["ticker"] in prices
+    )
+    cash_total = sum(float(asset.get("amount", 0) or 0) for asset in holdings.get("cash_assets", []))
+    snapshot = {
+        "date": today,
+        "stock_value": round(stock_total, 2),
+        "cash_value": round(cash_total, 2),
+        "total_value": round(stock_total + cash_total, 2),
+    }
+    daily = {row["date"]: row for row in portfolio_history.get("daily", []) if "date" in row}
+    daily[today] = snapshot
+    portfolio_history = {
+        "updated_at": fetched_at,
+        "daily": [daily[date] for date in sorted(daily)],
+    }
+    PORTFOLIO_HISTORY_FILE.write_text(
+        json.dumps(portfolio_history, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
 
