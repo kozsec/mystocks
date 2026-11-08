@@ -72,21 +72,6 @@ function makeLineChart(canvas, labels, values, color, fill = false, averageCost 
   return chart;
 }
 
-function buildPortfolioHistory(holdings, history, cashValue) {
-  const totals = new Map();
-  for (const stock of holdings) {
-    const shares = Number(stock.shares);
-    if (!Number.isFinite(shares) || shares <= 0) continue;
-    const rows = history[stock.ticker] || [];
-    for (const row of rows) {
-      if (!Number.isFinite(Number(row.close))) continue;
-      totals.set(row.date, (totals.get(row.date) || 0) + Number(row.close) * shares);
-    }
-  }
-  const labels = [...totals.keys()].sort();
-  return { labels, values: labels.map(date => totals.get(date) + cashValue) };
-}
-
 function renderSummary(holdings, prices, cashAssets) {
   let stockValue = 0;
   let totalCost = 0;
@@ -116,21 +101,20 @@ function renderSummary(holdings, prices, cashAssets) {
   byId("valuedCount").textContent = `評価対象 ${valuedCount} 銘柄 / 株価未取得 ${missingCount}`;
 }
 
-function renderCashTable(cashAssets) {
-  const body = byId("cashTable");
-  body.replaceChildren();
+function renderCashBreakdown(cashAssets) {
+  const container = byId("cashBreakdown");
+  container.replaceChildren();
   for (const asset of cashAssets) {
-    const tr = document.createElement("tr");
-    const name = document.createElement("td");
+    const row = document.createElement("div");
+    row.className = "cash-breakdown-row";
+    const name = document.createElement("span");
     name.textContent = asset.name;
-    const amount = document.createElement("td");
+    const amount = document.createElement("strong");
     amount.textContent = yen(Number(asset.amount));
-    tr.append(name, amount);
-    body.append(tr);
+    row.append(name, amount);
+    container.append(row);
   }
-  byId("cashTotal").textContent = yen(cashAssets.reduce((sum, asset) => sum + Number(asset.amount || 0), 0));
 }
-
 function renderStockCharts(holdings, prices, histories) {
   const container = byId("stockCharts");
   container.replaceChildren();
@@ -143,10 +127,9 @@ function renderStockCharts(holdings, prices, histories) {
     const head = document.createElement("div");
     head.className = "stock-card-head";
     const nameBlock = document.createElement("div");
-    nameBlock.innerHTML = `<div class="stock-name"></div><div class="stock-ticker"></div><div class="stock-account"></div>`;
+    nameBlock.innerHTML = `<div class="stock-name"></div><div class="stock-ticker"></div>`;
     nameBlock.querySelector(".stock-name").textContent = stock.name;
     nameBlock.querySelector(".stock-ticker").textContent = stock.ticker;
-    nameBlock.querySelector(".stock-account").textContent = stock.account || "メイン口座";
     const priceBlock = document.createElement("div");
     priceBlock.className = "stock-price";
     priceBlock.innerHTML = `<span></span><small></small>`;
@@ -174,7 +157,7 @@ function renderStockCharts(holdings, prices, histories) {
       }
     }
     meta.innerHTML = `<span></span><span></span>`;
-    meta.children[0].textContent = `${rows.length}営業日`;
+    meta.children[0].textContent = "";
     meta.children[1].textContent = profitText;
 
     card.append(head, chartWrap, meta);
@@ -205,9 +188,6 @@ function renderTable(holdings, prices) {
   for (const row of rows) {
     const {stock, shares, averageCost, close, validShares, value, profit} = row;
     const tr = document.createElement("tr");
-    const account = document.createElement("td");
-    account.textContent = stock.account || "メイン口座";
-    tr.append(account);
     const name = document.createElement("td");
     name.innerHTML = `<div class="stock-cell-name"></div><div class="stock-cell-ticker"></div>`;
     name.querySelector(".stock-cell-name").textContent = stock.name;
@@ -236,15 +216,17 @@ function renderTable(holdings, prices) {
 }
 async function init() {
   try {
-    const [holdingsResponse, pricesResponse, historyResponse] = await Promise.all([
+    const [holdingsResponse, pricesResponse, historyResponse, portfolioHistoryResponse] = await Promise.all([
       fetch("data/holdings.json"),
       fetch("data/prices.json"),
-      fetch("data/history.json")
+      fetch("data/history.json"),
+      fetch("data/portfolio_history.json")
     ]);
     if (!holdingsResponse.ok) throw new Error("holdings.json を読み込めません。");
     const holdingsData = await holdingsResponse.json();
     const pricesData = pricesResponse.ok ? await pricesResponse.json() : { prices: {} };
     const historyData = historyResponse.ok ? await historyResponse.json() : { stocks: {} };
+    const portfolioHistoryData = portfolioHistoryResponse.ok ? await portfolioHistoryResponse.json() : { daily: [] };
     const holdings = holdingsData.stocks || [];
     const cashAssets = holdingsData.cash_assets || [];
     const cashValue = cashAssets.reduce((sum, asset) => sum + Number(asset.amount || 0), 0);
@@ -256,26 +238,26 @@ async function init() {
       : "株価データ未更新";
 
     renderSummary(holdings, prices, cashAssets);
-    renderCashTable(cashAssets);
+    renderCashBreakdown(cashAssets);
     renderTable(holdings, prices);
     renderStockCharts(holdings, prices, histories);
 
-    const portfolio = buildPortfolioHistory(holdings, histories, cashValue);
-    if (portfolio.labels.length) {
-      makeLineChart(byId("portfolioChart"), portfolio.labels, portfolio.values, "#66a7ff", true);
+    const daily = portfolioHistoryData.daily || [];
+    if (daily.length) {
+      makeLineChart(byId("portfolioChart"), daily.map(row => row.date), daily.map(row => Number(row.total_value)), "#66a7ff", true);
     } else {
       byId("portfolioChart").hidden = true;
       byId("portfolioEmpty").hidden = false;
       byId("portfolioEmpty").textContent = "履歴データが未取得です。GitHub Actionsの更新完了後に再読み込みしてください。";
     }
-    if (!pricesResponse.ok || !historyResponse.ok) {
+    if (!pricesResponse.ok || !historyResponse.ok || !portfolioHistoryResponse.ok) {
       byId("updatedAt").textContent = "株価データ未検出：先に更新スクリプトを実行してください";
     }
   } catch (error) {
     byId("updatedAt").textContent = "読み込みエラー";
     byId("holdingsTable").innerHTML = `<tr><td colspan="6" class="loading-cell">${error.message}</td></tr>`;
     byId("portfolioEmpty").hidden = false;
-    byId("portfolioEmpty").textContent = "履歴データを読み込めません。GitHub Actionsの実行結果と data/history.json を確認してください。";
+    byId("portfolioEmpty").textContent = "履歴データを読み込めません。GitHub Actionsの実行結果と data/portfolio_history.json を確認してください。";
   }
 }
 
