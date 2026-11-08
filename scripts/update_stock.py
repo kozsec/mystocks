@@ -130,28 +130,31 @@ def main():
         except (json.JSONDecodeError, OSError):
             pass
 
-    today = datetime.now(ZoneInfo("Asia/Tokyo")).date().isoformat()
-    stock_total = sum(
-        float(prices[stock["ticker"]]["close"]) * float(stock.get("shares", 0) or 0)
-        for stock in stocks if stock["ticker"] in prices
-    )
-    cash_total = sum(float(asset.get("amount", 0) or 0) for asset in holdings.get("cash_assets", []))
-    snapshot = {
-        "date": today,
-        "stock_value": round(stock_total, 2),
-        "cash_value": round(cash_total, 2),
-        "total_value": round(stock_total + cash_total, 2),
-    }
-    daily = {row["date"]: row for row in portfolio_history.get("daily", []) if "date" in row}
-    daily[today] = snapshot
-    portfolio_history = {
-        "updated_at": fetched_at,
-        "daily": [daily[date] for date in sorted(daily)],
-    }
-    PORTFOLIO_HISTORY_FILE.write_text(
-        json.dumps(portfolio_history, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    if len(prices) == len(stocks):
+        today = datetime.now(ZoneInfo("Asia/Tokyo")).date().isoformat()
+        stock_total = sum(
+            float(prices[stock["ticker"]]["close"]) * float(stock.get("shares", 0) or 0)
+            for stock in stocks
+        )
+        cash_total = sum(float(asset.get("amount", 0) or 0) for asset in holdings.get("cash_assets", []))
+        snapshot = {
+            "date": today,
+            "stock_value": round(stock_total, 2),
+            "cash_value": round(cash_total, 2),
+            "total_value": round(stock_total + cash_total, 2),
+        }
+        daily = {row["date"]: row for row in portfolio_history.get("daily", []) if "date" in row}
+        daily[today] = snapshot
+        portfolio_history = {
+            "updated_at": fetched_at,
+            "daily": [daily[date] for date in sorted(daily)],
+        }
+        PORTFOLIO_HISTORY_FILE.write_text(
+            json.dumps(portfolio_history, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+    else:
+        print("一部の株価を取得できなかったため、総資産の日次記録はスキップしました。")
 
     print(f"\n更新完了: {len(prices)}銘柄")
     print(f"保存先: {PRICES_FILE.relative_to(ROOT)}")
