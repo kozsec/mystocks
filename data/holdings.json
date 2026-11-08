@@ -4,367 +4,470 @@
       "ticker": "2737.T",
       "name": "トーメンデバイス",
       "shares": 100,
-      "average_cost": 5460
+      "average_cost": 5460,
+      "account": "メイン口座"
     },
     {
       "ticker": "8035.T",
       "name": "東京エレクトロン",
       "shares": 500,
-      "average_cost": 7357
+      "average_cost": 7357,
+      "account": "メイン口座"
     },
     {
       "ticker": "2702.T",
       "name": "マクドナルド",
       "shares": 100,
-      "average_cost": 5061
+      "average_cost": 5061,
+      "account": "メイン口座"
     },
     {
       "ticker": "8591.T",
       "name": "オリックス",
       "shares": 100,
-      "average_cost": 1917
+      "average_cost": 1917,
+      "account": "メイン口座"
     },
     {
       "ticker": "9433.T",
       "name": "KDDI",
       "shares": 200,
-      "average_cost": 1467
+      "average_cost": 1467,
+      "account": "メイン口座"
     },
     {
       "ticker": "2207.T",
       "name": "名糖産業",
       "shares": 100,
-      "average_cost": 2041
+      "average_cost": 2041,
+      "account": "メイン口座"
     },
     {
       "ticker": "4526.T",
       "name": "理研ビタミン",
       "shares": 100,
-      "average_cost": 1415
+      "average_cost": 1415,
+      "account": "メイン口座"
     },
     {
       "ticker": "7846.T",
       "name": "パイロット",
       "shares": 300,
-      "average_cost": 1617
+      "average_cost": 1617,
+      "account": "メイン口座"
     },
     {
       "ticker": "1951.T",
       "name": "エクシオ",
       "shares": 200,
-      "average_cost": 1531
+      "average_cost": 1531,
+      "account": "メイン口座"
     },
     {
       "ticker": "2573.T",
       "name": "北海道コカコーラ",
       "shares": 100,
-      "average_cost": 2633
+      "average_cost": 2633,
+      "account": "メイン口座"
     },
     {
       "ticker": "3003.T",
       "name": "ヒューリック",
       "shares": 300,
-      "average_cost": 1465
+      "average_cost": 1465,
+      "account": "メイン口座"
     },
     {
       "ticker": "9347.T",
       "name": "日本管財",
       "shares": 100,
-      "average_cost": 1789
+      "average_cost": 1789,
+      "account": "メイン口座"
     },
     {
       "ticker": "8153.T",
       "name": "モスフードサービス",
       "shares": 100,
-      "average_cost": 3444
+      "average_cost": 3444,
+      "account": "メイン口座"
     },
     {
       "ticker": "7972.T",
       "name": "イトーキ",
       "shares": 100,
-      "average_cost": 1600
+      "average_cost": 1600,
+      "account": "メイン口座"
     },
     {
       "ticker": "8793.T",
       "name": "NECキャピタルソリューション",
       "shares": 100,
-      "average_cost": 3295
+      "average_cost": 3295,
+      "account": "メイン口座"
     },
     {
       "ticker": "2296.T",
       "name": "伊藤ハム",
       "shares": 200,
-      "average_cost": 4216
+      "average_cost": 4216,
+      "account": "メイン口座"
     },
     {
       "ticker": "1377.T",
       "name": "サカタのタネ",
       "shares": 100,
-      "average_cost": 3618
+      "average_cost": 3618,
+      "account": "メイン口座"
     },
     {
       "ticker": "9381.T",
       "name": "エーアイティー",
       "shares": 100,
-      "average_cost": 1696
+      "average_cost": 1696,
+      "account": "メイン口座"
     },
     {
       "ticker": "2816.T",
       "name": "ダイショー",
       "shares": 100,
-      "average_cost": 912
+      "average_cost": 912,
+      "account": "メイン口座"
     },
     {
       "ticker": "4923.T",
       "name": "コタ",
       "shares": 100,
-      "average_cost": 588
+      "average_cost": 588,
+      "account": "メイン口座"
     },
     {
       "ticker": "9759.T",
       "name": "NSD",
       "shares": 100,
-      "average_cost": 2721
+      "average_cost": 2721,
+      "account": "メイン口座"
     },
     {
       "ticker": "7272.T",
       "name": "ヤマハ発動機",
       "shares": 100,
-      "average_cost": 1433
+      "average_cost": 1433,
+      "account": "メイン口座"
     },
     {
       "ticker": "4326.T",
       "name": "インテージ",
       "shares": 100,
-      "average_cost": 1642
+      "average_cost": 1642,
+      "account": "メイン口座"
     },
     {
       "ticker": "1379.T",
       "name": "ホクト",
       "shares": 100,
-      "average_cost": 1877
+      "average_cost": 1877,
+      "account": "メイン口座"
     },
     {
       "ticker": "3382.T",
       "name": "7&iホールディングス",
       "shares": 100,
-      "average_cost": 2026
+      "average_cost": 2026,
+      "account": "メイン口座"
     },
     {
       "ticker": "3543.T",
       "name": "コメダ",
       "shares": 100,
-      "average_cost": 2832
+      "average_cost": 2832,
+      "account": "メイン口座"
     },
     {
       "ticker": "8801.T",
       "name": "三井不動産",
       "shares": 100,
-      "average_cost": 1539
+      "average_cost": 1539,
+      "account": "メイン口座"
     },
     {
       "ticker": "2670.T",
       "name": "ABCマート",
       "shares": 100,
-      "average_cost": 3140
+      "average_cost": 3140,
+      "account": "メイン口座"
     },
     {
       "ticker": "2209.T",
       "name": "井村屋",
       "shares": 100,
-      "average_cost": 2320
+      "average_cost": 2320,
+      "account": "メイン口座"
     },
     {
       "ticker": "2819.T",
       "name": "エバラ食品",
       "shares": 100,
-      "average_cost": 2708
+      "average_cost": 2708,
+      "account": "メイン口座"
     },
     {
       "ticker": "2801.T",
       "name": "キッコーマン",
       "shares": 100,
-      "average_cost": 1991
+      "average_cost": 1991,
+      "account": "メイン口座"
     },
     {
       "ticker": "7893.T",
       "name": "プロネクサス",
       "shares": 100,
-      "average_cost": 1321
+      "average_cost": 1321,
+      "account": "メイン口座"
     },
     {
       "ticker": "7974.T",
       "name": "任天堂",
       "shares": 100,
-      "average_cost": 8534
+      "average_cost": 8534,
+      "account": "メイン口座"
     },
     {
       "ticker": "4063.T",
       "name": "信越化学工業",
       "shares": 200,
-      "average_cost": 5829
+      "average_cost": 5829,
+      "account": "メイン口座"
     },
     {
       "ticker": "2897.T",
       "name": "日清食品",
       "shares": 100,
-      "average_cost": 4217
+      "average_cost": 4217,
+      "account": "メイン口座"
     },
     {
       "ticker": "7735.T",
       "name": "スクリーン",
       "shares": 200,
-      "average_cost": 5217
+      "average_cost": 5217,
+      "account": "メイン口座"
     },
     {
       "ticker": "2612.T",
       "name": "かどや",
       "shares": 200,
-      "average_cost": 1485
+      "average_cost": 1485,
+      "account": "メイン口座"
     },
     {
       "ticker": "9861.T",
       "name": "吉野家",
       "shares": 200,
-      "average_cost": 2910
+      "average_cost": 2910,
+      "account": "メイン口座"
     },
     {
       "ticker": "2579.T",
       "name": "コカコーラ",
       "shares": 100,
-      "average_cost": 2300
+      "average_cost": 2300,
+      "account": "メイン口座"
     },
     {
       "ticker": "5243.T",
       "name": "note",
       "shares": 100,
-      "average_cost": 1273
+      "average_cost": 1273,
+      "account": "メイン口座"
     },
     {
       "ticker": "2001.T",
       "name": "ニップン",
       "shares": 200,
-      "average_cost": 2270
+      "average_cost": 2270,
+      "account": "メイン口座"
     },
     {
       "ticker": "2269.T",
       "name": "明治",
       "shares": 100,
-      "average_cost": 3103
+      "average_cost": 3103,
+      "account": "メイン口座"
     },
     {
       "ticker": "3612.T",
       "name": "ワールド",
       "shares": 1000,
-      "average_cost": 1340
+      "average_cost": 1340,
+      "account": "メイン口座"
     },
     {
       "ticker": "4665.T",
       "name": "ダスキン",
       "shares": 100,
-      "average_cost": 3744
+      "average_cost": 3744,
+      "account": "メイン口座"
     },
     {
       "ticker": "2503.T",
       "name": "キリン",
       "shares": 100,
-      "average_cost": 1995
+      "average_cost": 1995,
+      "account": "メイン口座"
     },
     {
       "ticker": "6586.T",
       "name": "マキタ",
       "shares": 100,
-      "average_cost": 4944
+      "average_cost": 4944,
+      "account": "メイン口座"
     },
     {
       "ticker": "1928.T",
       "name": "積水ハウス",
       "shares": 100,
-      "average_cost": 3300
+      "average_cost": 3300,
+      "account": "メイン口座"
     },
     {
       "ticker": "8227.T",
       "name": "しまむら",
       "shares": 100,
-      "average_cost": 3260
+      "average_cost": 3260,
+      "account": "メイン口座"
     },
     {
       "ticker": "4848.T",
       "name": "フルキャストHD",
       "shares": 100,
-      "average_cost": 1785
+      "average_cost": 1785,
+      "account": "メイン口座"
     },
     {
       "ticker": "3139.T",
       "name": "ラクトジャパン",
       "shares": 100,
-      "average_cost": 3390
+      "average_cost": 3390,
+      "account": "メイン口座"
     },
     {
       "ticker": "4005.T",
       "name": "住友化学",
       "shares": 100,
-      "average_cost": 494
+      "average_cost": 494,
+      "account": "メイン口座"
     },
     {
       "ticker": "3922.T",
       "name": "PRTIMES",
       "shares": 100,
-      "average_cost": 2225
+      "average_cost": 2225,
+      "account": "メイン口座"
     },
     {
       "ticker": "6902.T",
       "name": "デンソー",
       "shares": 100,
-      "average_cost": 2200
+      "average_cost": 2200,
+      "account": "メイン口座"
     },
     {
       "ticker": "3046.T",
       "name": "JINS HD",
       "shares": 100,
-      "average_cost": 6200
+      "average_cost": 6200,
+      "account": "メイン口座"
     },
     {
       "ticker": "3962.T",
       "name": "チェンジHD",
       "shares": 300,
-      "average_cost": 999
+      "average_cost": 999,
+      "account": "メイン口座"
     },
     {
       "ticker": "6200.T",
       "name": "インソース",
       "shares": 100,
-      "average_cost": 1060
+      "average_cost": 1060,
+      "account": "メイン口座"
     },
     {
       "ticker": "6368.T",
       "name": "オルガノ",
       "shares": 100,
-      "average_cost": 1720
+      "average_cost": 1720,
+      "account": "メイン口座"
     },
     {
       "ticker": "5201.T",
       "name": "AGC",
       "shares": 100,
-      "average_cost": 5360
+      "average_cost": 5360,
+      "account": "メイン口座"
     },
     {
       "ticker": "2379.T",
       "name": "ディップ",
       "shares": 100,
-      "average_cost": 2752
+      "average_cost": 2752,
+      "account": "メイン口座"
     },
     {
       "ticker": "7033.T",
       "name": "MSOL",
       "shares": 200,
-      "average_cost": 2240
+      "average_cost": 2240,
+      "account": "メイン口座"
     },
     {
       "ticker": "6370.T",
       "name": "栗田工業",
       "shares": 100,
-      "average_cost": 6465
+      "average_cost": 6465,
+      "account": "メイン口座"
+    },
+    {
+      "ticker": "4923.T",
+      "name": "コタ",
+      "shares": 200,
+      "average_cost": 1111,
+      "account": "別口座"
+    },
+    {
+      "ticker": "7867.T",
+      "name": "タカラトミー",
+      "shares": 100,
+      "average_cost": 1815,
+      "account": "別口座"
+    },
+    {
+      "ticker": "8591.T",
+      "name": "オリックス",
+      "shares": 200,
+      "average_cost": 2450,
+      "account": "別口座"
+    },
+    {
+      "ticker": "9433.T",
+      "name": "KDDI",
+      "shares": 400,
+      "average_cost": 2000,
+      "account": "別口座"
+    },
+    {
+      "ticker": "3003.T",
+      "name": "ヒューリック",
+      "shares": 100,
+      "average_cost": 1480,
+      "account": "別口座"
+    },
+    {
+      "ticker": "9470.T",
+      "name": "学研HD",
+      "shares": 100,
+      "average_cost": 865,
+      "account": "別口座"
     }
   ],
   "cash_assets": [
