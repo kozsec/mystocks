@@ -15,7 +15,7 @@ const signedYen = value => {
 const byId = id => document.getElementById(id);
 const chartInstances = [];
 
-function makeLineChart(canvas, labels, values, color, fill = false, averageCost = null) {
+function makeLineChart(canvas, labels, values, color, fill = false, averageCost = null, showXAxis = true) {
   if (!window.Chart) return;
   const chart = new Chart(canvas, {
     type: "line",
@@ -52,7 +52,7 @@ function makeLineChart(canvas, labels, values, color, fill = false, averageCost 
       scales: {
         x: {
           grid: { display: false },
-          ticks: { color: "#8293aa", maxTicksLimit: 6, maxRotation: 0, font: { size: 9 } },
+          ticks: { display: showXAxis, color: "#8293aa", maxTicksLimit: 6, maxRotation: 0, font: { size: 9 } },
           border: { display: false }
         },
         y: {
@@ -176,7 +176,7 @@ function renderStockCharts(holdings, prices, histories) {
     container.append(card);
     if (rows.length) {
       const sorted = [...rows].sort((a, b) => a.date.localeCompare(b.date));
-      makeLineChart(canvas, sorted.map(row => row.date), sorted.map(row => Number(row.close)), "#2563eb", false, Number(stock.average_cost));
+      makeLineChart(canvas, sorted.map(row => row.date), sorted.map(row => Number(row.close)), "#2563eb", false, Number(stock.average_cost), false);
     } else {
       chartWrap.innerHTML = '<div class="empty-state">履歴データなし</div>';
     }
@@ -207,9 +207,6 @@ function renderTable(holdings, prices) {
     ticker.className = "stock-cell-ticker";
     ticker.textContent = stock.ticker;
     tr.append(name, ticker);
-    const purposeCell = document.createElement("td");
-    purposeCell.textContent = stock.purpose || "未設定";
-    tr.append(purposeCell);
     const cells = [
       shares == null ? "未入力" : validShares ? number(shares) + "株" : "—",
       averageCost == null ? "—" : yen(averageCost),
@@ -224,6 +221,9 @@ function renderTable(holdings, prices) {
       if(valueText==="—" || valueText==="未入力") td.classList.add("na");
       tr.append(td);
     });
+    const purposeCell = document.createElement("td");
+    purposeCell.textContent = stock.purpose || "未設定";
+    tr.append(purposeCell);
     body.append(tr);
   }
   byId("tableCount").textContent = holdings.length + " 銘柄";
