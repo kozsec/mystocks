@@ -1,6 +1,10 @@
 name: Update stock prices
 
 on:
+  push:
+    paths:
+      - "data/holdings.json"
+      - "scripts/update_stock.py"
   schedule:
     - cron: "0 7,9,12 * * 1-5"
   workflow_dispatch:
