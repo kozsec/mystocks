@@ -130,7 +130,10 @@ def main():
         except (json.JSONDecodeError, OSError):
             pass
 
-    if len(prices) == len(stocks):
+    required_tickers = {stock["ticker"] for stock in stocks}
+    missing_tickers = required_tickers - prices.keys()
+
+    if not missing_tickers:
         today = datetime.now(ZoneInfo("Asia/Tokyo")).date().isoformat()
         stock_total = sum(
             float(prices[stock["ticker"]]["close"]) * float(stock.get("shares", 0) or 0)
@@ -153,8 +156,13 @@ def main():
             json.dumps(portfolio_history, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
         )
+        print(f"総資産の日次記録を保存しました: {today}")
+        print(f"  株式評価額: {stock_total:,.0f}円")
+        print(f"  現金・預金: {cash_total:,.0f}円")
+        print(f"  総資産評価額: {stock_total + cash_total:,.0f}円")
     else:
         print("一部の株価を取得できなかったため、総資産の日次記録はスキップしました。")
+        print("未取得銘柄: " + ", ".join(sorted(missing_tickers)))
 
     print(f"\n更新完了: {len(prices)}銘柄")
     print(f"保存先: {PRICES_FILE.relative_to(ROOT)}")
