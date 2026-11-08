@@ -72,10 +72,14 @@ def main():
     prices = {}
     histories = {}
     failures = []
+    fetched_tickers = set()
 
     for stock in stocks:
         ticker = stock["ticker"]
         name = stock.get("name", ticker)
+        if ticker in fetched_tickers:
+            continue
+        fetched_tickers.add(ticker)
         print(f"取得中: {name} ({ticker})")
 
         try:
