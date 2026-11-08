@@ -15,23 +15,34 @@ const signedYen = value => {
 const byId = id => document.getElementById(id);
 const chartInstances = [];
 
-function makeLineChart(canvas, labels, values, color, fill = false) {
+function makeLineChart(canvas, labels, values, color, fill = false, averageCost = null) {
   if (!window.Chart) return;
   const chart = new Chart(canvas, {
     type: "line",
     data: {
       labels,
-      datasets: [{
-        data: values,
-        borderColor: color,
-        backgroundColor: fill ? "rgba(102, 167, 255, 0.12)" : "transparent",
-        borderWidth: 2,
-        pointRadius: 0,
-        pointHoverRadius: 4,
-        fill,
-        tension: 0.25,
-        spanGaps: true
-      }]
+      datasets: [
+        {
+          data: values,
+          borderColor: color,
+          backgroundColor: fill ? "rgba(59, 130, 246, 0.10)" : "transparent",
+          borderWidth: 2,
+          pointRadius: 0,
+          pointHoverRadius: 4,
+          fill,
+          tension: 0.25,
+          spanGaps: true
+        },
+        ...(averageCost != null && Number.isFinite(averageCost) ? [{
+          data: labels.map(() => averageCost),
+          borderColor: "#dc2626",
+          borderWidth: 1.5,
+          borderDash: [5, 4],
+          pointRadius: 0,
+          pointHoverRadius: 0,
+          fill: false
+        }] : [])
+      ]
     },
     options: {
       responsive: true,
@@ -132,9 +143,10 @@ function renderStockCharts(holdings, prices, histories) {
     const head = document.createElement("div");
     head.className = "stock-card-head";
     const nameBlock = document.createElement("div");
-    nameBlock.innerHTML = `<div class="stock-name"></div><div class="stock-ticker"></div>`;
+    nameBlock.innerHTML = `<div class="stock-name"></div><div class="stock-ticker"></div><div class="stock-account"></div>`;
     nameBlock.querySelector(".stock-name").textContent = stock.name;
     nameBlock.querySelector(".stock-ticker").textContent = stock.ticker;
+    nameBlock.querySelector(".stock-account").textContent = stock.account || "メイン口座";
     const priceBlock = document.createElement("div");
     priceBlock.className = "stock-price";
     priceBlock.innerHTML = `<span></span><small></small>`;
@@ -169,7 +181,7 @@ function renderStockCharts(holdings, prices, histories) {
     container.append(card);
     if (rows.length) {
       const sorted = [...rows].sort((a, b) => a.date.localeCompare(b.date));
-      makeLineChart(canvas, sorted.map(row => row.date), sorted.map(row => Number(row.close)), "#66a7ff");
+      makeLineChart(canvas, sorted.map(row => row.date), sorted.map(row => Number(row.close)), "#2563eb", false, Number(stock.average_cost));
     } else {
       chartWrap.innerHTML = '<div class="empty-state">履歴データなし</div>';
     }
@@ -179,7 +191,8 @@ function renderStockCharts(holdings, prices, histories) {
 function renderTable(holdings, prices) {
   const body = byId("holdingsTable");
   body.replaceChildren();
-  for (const stock of holdings) {
+  const purposeOptions = ["優待目的", "配当目的", "売買目的", "その他"];
+  const rows = holdings.map(stock => {
     const price = prices[stock.ticker];
     const shares = stock.shares == null ? null : Number(stock.shares);
     const averageCost = stock.average_cost == null ? null : Number(stock.average_cost);
@@ -188,33 +201,51 @@ function renderTable(holdings, prices) {
     const value = validShares && close != null ? shares * close : null;
     const cost = validShares && Number.isFinite(averageCost) ? shares * averageCost : null;
     const profit = value != null && cost != null ? value - cost : null;
-
+    return {stock, shares, averageCost, close, validShares, value, profit};
+  }).sort((a,b) => (b.profit ?? -Infinity) - (a.profit ?? -Infinity));
+  for (const row of rows) {
+    const {stock, shares, averageCost, close, validShares, value, profit} = row;
     const tr = document.createElement("tr");
+    const account = document.createElement("td");
+    account.textContent = stock.account || "メイン口座";
+    tr.append(account);
     const name = document.createElement("td");
     name.innerHTML = `<div class="stock-cell-name"></div><div class="stock-cell-ticker"></div>`;
     name.querySelector(".stock-cell-name").textContent = stock.name;
     name.querySelector(".stock-cell-ticker").textContent = stock.ticker;
     tr.append(name);
-
+    const purposeCell = document.createElement("td");
+    const purpose = document.createElement("select");
+    purpose.className = "purpose-select";
+    purposeOptions.forEach(option => {
+      const item = document.createElement("option");
+      item.value = option;
+      item.textContent = option;
+      purpose.append(item);
+    });
+    const purposeKey = "stock-purpose:" + (stock.account || "メイン口座") + ":" + stock.ticker;
+    purpose.value = localStorage.getItem(purposeKey) || stock.purpose || "その他";
+    purpose.addEventListener("change", () => localStorage.setItem(purposeKey, purpose.value));
+    purposeCell.append(purpose);
+    tr.append(purposeCell);
     const cells = [
-      shares == null ? "未入力" : validShares ? `${number(shares)}株` : "—",
+      shares == null ? "未入力" : validShares ? number(shares) + "株" : "—",
       averageCost == null ? "—" : yen(averageCost),
       close == null ? "—" : yen(close),
       value == null ? "—" : yen(value),
       profit == null ? "—" : signedYen(profit)
     ];
-    cells.forEach((valueText, index) => {
+    cells.forEach((valueText,index) => {
       const td = document.createElement("td");
       td.textContent = valueText;
-      if (index === 4 && profit != null) td.className = profit >= 0 ? "positive" : "negative";
-      if (valueText === "—" || valueText === "未入力") td.classList.add("na");
+      if(index===4 && profit!=null) td.className = profit>=0 ? "positive" : "negative";
+      if(valueText==="—" || valueText==="未入力") td.classList.add("na");
       tr.append(td);
     });
     body.append(tr);
   }
-  byId("tableCount").textContent = `${holdings.length} 銘柄`;
+  byId("tableCount").textContent = holdings.length + " 銘柄";
 }
-
 async function init() {
   try {
     const [holdingsResponse, pricesResponse, historyResponse] = await Promise.all([
