@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>Stock Portfolio | koz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">S</div>
+      <div>
+        <div class="brand-title">STOCK PORTFOLIO</div>
+        <div class="brand-subtitle">Japanese Equity Dashboard</div>
+      </div>
+    </div>
+    <div class="updated" id="updatedAt">データを読み込み中...</div>
+  </header>
+
+  <main class="container">
+    <section class="page-heading">
+      <div>
+        <p class="eyebrow">PORTFOLIO OVERVIEW</p>
+        <h1>資産ダッシュボード</h1>
+        <p class="description">保有株式の評価額・損益・株価推移を確認できます。</p>
+      </div>
+      <div class="market-status"><span class="status-dot"></span> 日本株式</div>
+    </section>
+
+    <section class="summary-grid" aria-label="資産サマリー">
+      <article class="summary-card primary">
+        <div class="summary-label">総資産評価額</div>
+        <div class="summary-value" id="totalValue">--</div>
+        <div class="summary-foot" id="valuedCount">評価対象 -- 銘柄</div>
+      </article>
+      <article class="summary-card">
+        <div class="summary-label">取得総額</div>
+        <div class="summary-value" id="totalCost">--</div>
+        <div class="summary-foot">保有株数 × 平均取得単価</div>
+      </article>
+      <article class="summary-card">
+        <div class="summary-label">含み損益</div>
+        <div class="summary-value" id="totalProfit">--</div>
+        <div class="summary-foot" id="profitRate">--</div>
+      </article>
+      <article class="summary-card">
+        <div class="summary-label">登録銘柄数</div>
+        <div class="summary-value" id="stockCount">--</div>
+        <div class="summary-foot" id="missingCount">株価取得 -- 銘柄</div>
+      </article>
+    </section>
+
+    <section class="panel portfolio-panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">TOTAL ASSET</p>
+          <h2>総資産評価額の推移</h2>
+        </div>
+        <span class="period-label">過去1年間・日足</span>
+      </div>
+      <div class="chart-wrap portfolio-chart-wrap">
+        <canvas id="portfolioChart" aria-label="総資産評価額の推移グラフ"></canvas>
+        <div class="empty-state" id="portfolioEmpty" hidden>履歴データがありません。</div>
+      </div>
+    </section>
+
+    <section class="stocks-section">
+      <div class="section-heading stock-section-heading">
+        <div>
+          <p class="eyebrow">INDIVIDUAL PERFORMANCE</p>
+          <h2>個別銘柄の株価推移</h2>
+        </div>
+        <span class="period-label">終値・過去1年間</span>
+      </div>
+      <div class="stock-chart-grid" id="stockCharts"></div>
+    </section>
+
+    <section class="panel holdings-panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">HOLDINGS</p>
+          <h2>保有銘柄一覧</h2>
+        </div>
+        <span class="period-label" id="tableCount">-- 銘柄</span>
+      </div>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>銘柄</th>
+              <th>保有株数</th>
+              <th>平均取得単価</th>
+              <th>現在値</th>
+              <th>評価額</th>
+              <th>含み損益</th>
+            </tr>
+          </thead>
+          <tbody id="holdingsTable">
+            <tr><td colspan="6" class="loading-cell">データを読み込んでいます...</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">※ オリックスは保有株数が未入力のため、資産集計から除外しています。</p>
+    </section>
+
+    <footer>
+      <span>Stock Portfolio Dashboard</span>
+      <span>Market data: Yahoo Finance via yfinance</span>
+    </footer>
+  </main>
+</body>
+</html>

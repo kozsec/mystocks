@@ -1,0 +1,214 @@
+{
+  "stocks": [
+    {
+      "ticker": "2737.T",
+      "name": "トーメンデバイス",
+      "shares": 100,
+      "average_cost": 5460
+    },
+    {
+      "ticker": "8035.T",
+      "name": "東京エレクトロン",
+      "shares": 500,
+      "average_cost": 7357
+    },
+    {
+      "ticker": "2702.T",
+      "name": "マクドナルド",
+      "shares": 100,
+      "average_cost": 5061
+    },
+    {
+      "ticker": "8591.T",
+      "name": "オリックス",
+      "shares": 100,
+      "average_cost": 1917
+    },
+    {
+      "ticker": "9433.T",
+      "name": "KDDI",
+      "shares": 200,
+      "average_cost": 1467
+    },
+    {
+      "ticker": "2207.T",
+      "name": "名糖産業",
+      "shares": 100,
+      "average_cost": 2041
+    },
+    {
+      "ticker": "4526.T",
+      "name": "理研ビタミン",
+      "shares": 100,
+      "average_cost": 1415
+    },
+    {
+      "ticker": "7846.T",
+      "name": "パイロット",
+      "shares": 300,
+      "average_cost": 1617
+    },
+    {
+      "ticker": "1951.T",
+      "name": "エクシオ",
+      "shares": 200,
+      "average_cost": 1531
+    },
+    {
+      "ticker": "2573.T",
+      "name": "北海道コカコーラ",
+      "shares": 100,
+      "average_cost": 2633
+    },
+    {
+      "ticker": "3003.T",
+      "name": "ヒューリック",
+      "shares": 300,
+      "average_cost": 1465
+    },
+    {
+      "ticker": "9347.T",
+      "name": "日本管財",
+      "shares": 100,
+      "average_cost": 1789
+    },
+    {
+      "ticker": "8153.T",
+      "name": "モスフードサービス",
+      "shares": 100,
+      "average_cost": 3444
+    },
+    {
+      "ticker": "7972.T",
+      "name": "イトーキ",
+      "shares": 100,
+      "average_cost": 1600
+    },
+    {
+      "ticker": "8793.T",
+      "name": "NECキャピタルソリューション",
+      "shares": 100,
+      "average_cost": 3295
+    },
+    {
+      "ticker": "2296.T",
+      "name": "伊藤ハム",
+      "shares": 200,
+      "average_cost": 4216
+    },
+    {
+      "ticker": "1377.T",
+      "name": "サカタのタネ",
+      "shares": 100,
+      "average_cost": 3618
+    },
+    {
+      "ticker": "9381.T",
+      "name": "エーアイティー",
+      "shares": 100,
+      "average_cost": 1696
+    },
+    {
+      "ticker": "2816.T",
+      "name": "ダイショー",
+      "shares": 100,
+      "average_cost": 912
+    },
+    {
+      "ticker": "4923.T",
+      "name": "コタ",
+      "shares": 100,
+      "average_cost": 588
+    },
+    {
+      "ticker": "9759.T",
+      "name": "NSD",
+      "shares": 100,
+      "average_cost": 2721
+    },
+    {
+      "ticker": "7272.T",
+      "name": "ヤマハ発動機",
+      "shares": 100,
+      "average_cost": 1433
+    },
+    {
+      "ticker": "4326.T",
+      "name": "インテージ",
+      "shares": 100,
+      "average_cost": 1642
+    },
+    {
+      "ticker": "1379.T",
+      "name": "ホクト",
+      "shares": 100,
+      "average_cost": 1877
+    },
+    {
+      "ticker": "3382.T",
+      "name": "7&iホールディングス",
+      "shares": 100,
+      "average_cost": 2026
+    },
+    {
+      "ticker": "3543.T",
+      "name": "コメダ",
+      "shares": 100,
+      "average_cost": 2832
+    },
+    {
+      "ticker": "8801.T",
+      "name": "三井不動産",
+      "shares": 100,
+      "average_cost": 1539
+    },
+    {
+      "ticker": "2670.T",
+      "name": "ABCマート",
+      "shares": 100,
+      "average_cost": 3140
+    },
+    {
+      "ticker": "2209.T",
+      "name": "井村屋",
+      "shares": 100,
+      "average_cost": 2320
+    },
+    {
+      "ticker": "2819.T",
+      "name": "エバラ食品",
+      "shares": 100,
+      "average_cost": 2708
+    },
+    {
+      "ticker": "2801.T",
+      "name": "キッコーマン",
+      "shares": 100,
+      "average_cost": 1991
+    },
+    {
+      "ticker": "7893.T",
+      "name": "プロネクサス",
+      "shares": 100,
+      "average_cost": 1321
+    },
+    {
+      "ticker": "7974.T",
+      "name": "任天堂",
+      "shares": 100,
+      "average_cost": 8534
+    },
+    {
+      "ticker": "4063.T",
+      "name": "信越化学工業",
+      "shares": 200,
+      "average_cost": 5829
+    },
+    {
+      "ticker": "2897.T",
+      "name": "日清食品",
+      "shares": 100,
+      "average_cost": 4217
+    }
+  ]
+}
