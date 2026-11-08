@@ -37,25 +37,18 @@
         <div class="summary-value" id="totalValue">--</div>
         <div class="summary-foot">株式＋現金・預金</div>
       </article>
-      <article class="summary-card">
-        <div class="summary-label">株式評価額</div>
-        <div class="summary-value" id="stockValue">--</div>
-        <div class="summary-foot" id="valuedCount">評価対象 -- 銘柄</div>
+      <article class="summary-card stock-summary-card">
+        <div class="summary-label">STOCK PORTFOLIO</div>
+        <div class="stock-summary-metrics">
+          <div><span>株式評価額</span><strong id="stockValue">--</strong><small id="valuedCount">評価対象 -- 銘柄</small></div>
+          <div><span>株式取得総額</span><strong id="totalCost">--</strong><small>保有株数 × 平均取得単価</small></div>
+          <div><span>株式含み損益</span><strong id="totalProfit">--</strong><small id="profitRate">--</small></div>
+        </div>
       </article>
-      <article class="summary-card">
+      <article class="summary-card cash-summary-card">
         <div class="summary-label">CASH &amp; DEPOSITS</div>
         <div class="summary-value" id="cashValue">--</div>
         <div class="cash-breakdown" id="cashBreakdown"></div>
-      </article>
-      <article class="summary-card">
-        <div class="summary-label">株式取得総額</div>
-        <div class="summary-value" id="totalCost">--</div>
-        <div class="summary-foot">保有株数 × 平均取得単価</div>
-      </article>
-      <article class="summary-card">
-        <div class="summary-label">株式含み損益</div>
-        <div class="summary-value" id="totalProfit">--</div>
-        <div class="summary-foot" id="profitRate">--</div>
       </article>
     </section>
 
@@ -73,17 +66,6 @@
       </div>
     </section>
 
-    <section class="stocks-section">
-      <div class="section-heading stock-section-heading">
-        <div>
-          <p class="eyebrow">INDIVIDUAL PERFORMANCE</p>
-          <h2>個別銘柄の株価推移</h2>
-        </div>
-        <span class="period-label">青：終値 ／ 赤破線：平均取得単価</span>
-      </div>
-      <div class="stock-chart-grid" id="stockCharts"></div>
-    </section>
-
     <section class="panel holdings-panel">
       <div class="section-heading">
         <div>
@@ -96,7 +78,8 @@
         <table>
           <thead>
             <tr>
-              <th>銘柄</th>
+              <th>銘柄名</th>
+              <th>証券コード</th>
               <th>投資目的</th>
               <th>保有株数</th>
               <th>平均取得単価</th>
@@ -106,10 +89,22 @@
             </tr>
           </thead>
           <tbody id="holdingsTable">
-            <tr><td colspan="7" class="loading-cell">データを読み込んでいます...</td></tr>
+            <tr><td colspan="8" class="loading-cell">データを読み込んでいます...</td></tr>
           </tbody>
         </table>
       </div>
+    </section>
+
+
+    <section class="stocks-section">
+      <div class="section-heading stock-section-heading">
+        <div>
+          <p class="eyebrow">INDIVIDUAL PERFORMANCE</p>
+          <h2>個別銘柄の株価推移</h2>
+        </div>
+        <span class="period-label">青：終値 ／ 赤破線：平均取得単価</span>
+      </div>
+      <div class="stock-chart-grid" id="stockCharts"></div>
     </section>
 
     <footer>
