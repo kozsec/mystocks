@@ -135,3 +135,6 @@ footer { display: flex; justify-content: space-between; gap: 12px; color: #687a9
   .stock-meta { font-size: 8px; flex-direction: column; gap: 2px; }
   .purpose-select { max-width: 90px; font-size: 10px; }
 }
+.cash-breakdown { margin-top: 9px; display: grid; gap: 4px; }
+.cash-breakdown-row { display: flex; justify-content: space-between; gap: 8px; color: var(--muted); font-size: 10px; }
+.cash-breakdown-row strong { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; }
