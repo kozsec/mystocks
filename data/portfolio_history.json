@@ -1,4 +1,11 @@
 {
-  "updated_at": null,
-  "daily": []
+  "updated_at": "2026-11-08T22:10:03+09:00",
+  "daily": [
+    {
+      "date": "2026-11-08",
+      "stock_value": 33840780.0,
+      "cash_value": 12000000.0,
+      "total_value": 45840780.0
+    }
+  ]
 }
