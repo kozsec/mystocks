@@ -209,6 +209,172 @@
       "name": "日清食品",
       "shares": 100,
       "average_cost": 4217
+    },
+    {
+      "ticker": "7735.T",
+      "name": "スクリーン",
+      "shares": 200,
+      "average_cost": 5217
+    },
+    {
+      "ticker": "2612.T",
+      "name": "かどや",
+      "shares": 200,
+      "average_cost": 1485
+    },
+    {
+      "ticker": "9861.T",
+      "name": "吉野家",
+      "shares": 200,
+      "average_cost": 2910
+    },
+    {
+      "ticker": "2579.T",
+      "name": "コカコーラ",
+      "shares": 100,
+      "average_cost": 2300
+    },
+    {
+      "ticker": "5243.T",
+      "name": "note",
+      "shares": 100,
+      "average_cost": 1273
+    },
+    {
+      "ticker": "2001.T",
+      "name": "ニップン",
+      "shares": 200,
+      "average_cost": 2270
+    },
+    {
+      "ticker": "2269.T",
+      "name": "明治",
+      "shares": 100,
+      "average_cost": 3103
+    },
+    {
+      "ticker": "3612.T",
+      "name": "ワールド",
+      "shares": 1000,
+      "average_cost": 1340
+    },
+    {
+      "ticker": "4665.T",
+      "name": "ダスキン",
+      "shares": 100,
+      "average_cost": 3744
+    },
+    {
+      "ticker": "2503.T",
+      "name": "キリン",
+      "shares": 100,
+      "average_cost": 1995
+    },
+    {
+      "ticker": "6586.T",
+      "name": "マキタ",
+      "shares": 100,
+      "average_cost": 4944
+    },
+    {
+      "ticker": "1928.T",
+      "name": "積水ハウス",
+      "shares": 100,
+      "average_cost": 3300
+    },
+    {
+      "ticker": "8227.T",
+      "name": "しまむら",
+      "shares": 100,
+      "average_cost": 3260
+    },
+    {
+      "ticker": "4848.T",
+      "name": "フルキャストHD",
+      "shares": 100,
+      "average_cost": 1785
+    },
+    {
+      "ticker": "3139.T",
+      "name": "ラクトジャパン",
+      "shares": 100,
+      "average_cost": 3390
+    },
+    {
+      "ticker": "4005.T",
+      "name": "住友化学",
+      "shares": 100,
+      "average_cost": 494
+    },
+    {
+      "ticker": "3922.T",
+      "name": "PRTIMES",
+      "shares": 100,
+      "average_cost": 2225
+    },
+    {
+      "ticker": "6902.T",
+      "name": "デンソー",
+      "shares": 100,
+      "average_cost": 2200
+    },
+    {
+      "ticker": "3046.T",
+      "name": "JINS HD",
+      "shares": 100,
+      "average_cost": 6200
+    },
+    {
+      "ticker": "3962.T",
+      "name": "チェンジHD",
+      "shares": 300,
+      "average_cost": 999
+    },
+    {
+      "ticker": "6200.T",
+      "name": "インソース",
+      "shares": 100,
+      "average_cost": 1060
+    },
+    {
+      "ticker": "6368.T",
+      "name": "オルガノ",
+      "shares": 100,
+      "average_cost": 1720
+    },
+    {
+      "ticker": "5201.T",
+      "name": "AGC",
+      "shares": 100,
+      "average_cost": 5360
+    },
+    {
+      "ticker": "2379.T",
+      "name": "ディップ",
+      "shares": 100,
+      "average_cost": 2752
+    },
+    {
+      "ticker": "7033.T",
+      "name": "MSOL",
+      "shares": 200,
+      "average_cost": 2240
+    },
+    {
+      "ticker": "6370.T",
+      "name": "栗田工業",
+      "shares": 100,
+      "average_cost": 6465
+    }
+  ],
+  "cash_assets": [
+    {
+      "name": "預金",
+      "amount": 4000000
+    },
+    {
+      "name": "定期預金",
+      "amount": 8000000
     }
   ]
 }
