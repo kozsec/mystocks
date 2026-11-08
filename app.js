@@ -191,7 +191,6 @@ function renderStockCharts(holdings, prices, histories) {
 function renderTable(holdings, prices) {
   const body = byId("holdingsTable");
   body.replaceChildren();
-  const purposeOptions = ["優待目的", "配当目的", "売買目的", "その他"];
   const rows = holdings.map(stock => {
     const price = prices[stock.ticker];
     const shares = stock.shares == null ? null : Number(stock.shares);
@@ -215,18 +214,7 @@ function renderTable(holdings, prices) {
     name.querySelector(".stock-cell-ticker").textContent = stock.ticker;
     tr.append(name);
     const purposeCell = document.createElement("td");
-    const purpose = document.createElement("select");
-    purpose.className = "purpose-select";
-    purposeOptions.forEach(option => {
-      const item = document.createElement("option");
-      item.value = option;
-      item.textContent = option;
-      purpose.append(item);
-    });
-    const purposeKey = "stock-purpose:" + (stock.account || "メイン口座") + ":" + stock.ticker;
-    purpose.value = localStorage.getItem(purposeKey) || stock.purpose || "その他";
-    purpose.addEventListener("change", () => localStorage.setItem(purposeKey, purpose.value));
-    purposeCell.append(purpose);
+    purposeCell.textContent = stock.purpose || "未設定";
     tr.append(purposeCell);
     const cells = [
       shares == null ? "未入力" : validShares ? number(shares) + "株" : "—",
@@ -278,6 +266,7 @@ async function init() {
     } else {
       byId("portfolioChart").hidden = true;
       byId("portfolioEmpty").hidden = false;
+      byId("portfolioEmpty").textContent = "履歴データが未取得です。GitHub Actionsの更新完了後に再読み込みしてください。";
     }
     if (!pricesResponse.ok || !historyResponse.ok) {
       byId("updatedAt").textContent = "株価データ未検出：先に更新スクリプトを実行してください";
@@ -286,7 +275,7 @@ async function init() {
     byId("updatedAt").textContent = "読み込みエラー";
     byId("holdingsTable").innerHTML = `<tr><td colspan="6" class="loading-cell">${error.message}</td></tr>`;
     byId("portfolioEmpty").hidden = false;
-    byId("portfolioEmpty").textContent = "data/ 配下のJSONファイルを確認してください。";
+    byId("portfolioEmpty").textContent = "履歴データを読み込めません。GitHub Actionsの実行結果と data/history.json を確認してください。";
   }
 }
 
