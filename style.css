@@ -52,7 +52,7 @@ h2 { font-size: 18px; margin: 0; letter-spacing: -.02em; }
   color: #c4d2e4; font-size: 12px; white-space: nowrap;
 }
 .status-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--green); margin-right: 7px; }
-.summary-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 18px; }
+.summary-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; margin-bottom: 18px; }
 .summary-card, .panel, .stock-card {
   background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
 }
@@ -63,6 +63,7 @@ h2 { font-size: 18px; margin: 0; letter-spacing: -.02em; }
 .summary-foot { color: var(--muted); font-size: 11px; margin-top: 7px; }
 .panel { padding: 22px; }
 .portfolio-panel { margin-bottom: 34px; }
+.cash-panel { margin-bottom: 34px; }
 .section-heading { margin-bottom: 20px; }
 .period-label { color: var(--muted); font-size: 11px; white-space: nowrap; }
 .chart-wrap { height: 300px; position: relative; }
@@ -96,7 +97,7 @@ th:first-child, td:first-child { text-align: left; }
 footer { display: flex; justify-content: space-between; gap: 12px; color: #687a91; font-size: 10px; padding: 24px 2px 4px; }
 
 @media (max-width: 980px) {
-  .summary-grid { grid-template-columns: repeat(2, 1fr); }
+  .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .stock-chart-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 600px) {
