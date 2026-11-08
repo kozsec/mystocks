@@ -102,7 +102,6 @@ function renderSummary(holdings, prices, cashAssets) {
   byId("totalProfit").textContent = signedYen(profit);
   byId("totalProfit").className = "summary-value " + (profit >= 0 ? "positive" : "negative");
   byId("profitRate").textContent = rate == null ? "—" : `${rate >= 0 ? "+" : ""}${rate.toFixed(2)}%`;
-  byId("stockCount").textContent = `${holdings.length} 銘柄`;
   byId("valuedCount").textContent = `評価対象 ${valuedCount} 銘柄 / 株価未取得 ${missingCount}`;
 }
 
