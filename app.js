@@ -255,7 +255,7 @@ async function init() {
     }
   } catch (error) {
     byId("updatedAt").textContent = "読み込みエラー";
-    byId("holdingsTable").innerHTML = `<tr><td colspan="6" class="loading-cell">${error.message}</td></tr>`;
+    byId("holdingsTable").innerHTML = `<tr><td colspan="7" class="loading-cell">${error.message}</td></tr>`;
     byId("portfolioEmpty").hidden = false;
     byId("portfolioEmpty").textContent = "履歴データを読み込めません。GitHub Actionsの実行結果と data/portfolio_history.json を確認してください。";
   }
