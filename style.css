@@ -52,42 +52,54 @@ h2 { font-size: 18px; margin: 0; letter-spacing: -.02em; }
   color: #475569; font-size: 12px; white-space: nowrap;
 }
 .status-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--green); margin-right: 7px; }
-.summary-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; margin-bottom: 18px; }
+.summary-grid { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 14px; margin-bottom: 18px; }
 .summary-card, .panel, .stock-card {
   background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
 }
-.summary-card { padding: 19px 20px; min-height: 128px; }
+.summary-card { padding: 17px 18px; min-height: 128px; }
+.stock-summary-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
+.stock-summary-metrics div { min-width: 0; }
+.stock-summary-metrics span, .stock-summary-metrics small { display: block; color: var(--muted); font-size: 10px; }
+.stock-summary-metrics strong { display: block; margin-top: 6px; font-size: clamp(15px, 1.5vw, 21px); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.stock-summary-metrics small { margin-top: 4px; }
 .summary-card.primary { background: #eff6ff; border-color: #bfdbfe; }
 .summary-label { color: #475569; font-size: 12px; }
 .summary-value { font-size: clamp(22px, 2.4vw, 29px); font-weight: 700; letter-spacing: -.04em; margin-top: 13px; font-variant-numeric: tabular-nums; }
 .summary-foot { color: var(--muted); font-size: 11px; margin-top: 7px; }
 .panel { padding: 22px; }
-.portfolio-panel { margin-bottom: 34px; }
+.portfolio-panel { margin-bottom: 24px; }
 .cash-panel { margin-bottom: 34px; }
 .section-heading { margin-bottom: 20px; }
 .period-label { color: var(--muted); font-size: 11px; white-space: nowrap; }
 .chart-wrap { height: 300px; position: relative; }
 .portfolio-chart-wrap { height: 330px; }
-.stocks-section { margin-bottom: 34px; }
+.stocks-section { margin-bottom: 24px; }
 .stock-section-heading { margin-bottom: 18px; }
-.stock-chart-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
-.stock-card { min-width: 0; padding: 11px; border-radius: 10px; }
-.stock-card-head { display: flex; justify-content: space-between; gap: 8px; align-items: flex-start; margin-bottom: 14px; }
-.stock-name { font-weight: 600; font-size: 13px; overflow-wrap: anywhere; }
-.stock-ticker { color: var(--muted); font-size: 10px; margin-top: 4px; }
-.stock-price { text-align: right; font-size: 14px; font-weight: 700; white-space: nowrap; }
-.stock-price small { display: block; color: var(--muted); font-size: 10px; font-weight: 400; margin-top: 4px; }
-.stock-chart { height: 88px; position: relative; }
-.stock-meta { color: var(--muted); font-size: 10px; margin-top: 10px; display: flex; justify-content: space-between; gap: 8px; }
+.stock-chart-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; }
+.stock-card { min-width: 0; padding: 8px; border-radius: 9px; }
+.stock-card-head { display: flex; justify-content: space-between; gap: 5px; align-items: center; margin-bottom: 5px; }
+.stock-name { font-weight: 600; font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.stock-ticker { color: var(--muted); font-size: 9px; margin-top: 1px; }
+.stock-price { text-align: right; font-size: 11px; font-weight: 700; white-space: nowrap; }
+.stock-price small { display: none; }
+.stock-chart { height: 58px; position: relative; }
+.stock-meta { display: none; }
 .holdings-panel { padding-bottom: 16px; }
 .table-scroll { overflow-x: auto; }
-table { border-collapse: collapse; width: 100%; min-width: 760px; }
-th, td { padding: 7px 9px; border-bottom: 1px solid var(--border); text-align: right; white-space: nowrap; }
+table { border-collapse: collapse; width: 100%; min-width: 820px; table-layout: fixed; }
+th, td { padding: 5px 7px; border-bottom: 1px solid var(--border); text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 th { color: var(--muted); font-size: 11px; font-weight: 500; }
 td { font-size: 11px; font-variant-numeric: tabular-nums; }
-th:first-child, td:first-child { text-align: left; }
-.stock-cell-name { font-weight: 600; }
-.stock-cell-ticker { color: var(--muted); font-size: 10px; margin-top: 3px; }
+th:first-child, td:first-child { text-align: left; width: 115px; }
+th:nth-child(2), td:nth-child(2) { text-align: left; width: 78px; }
+th:nth-child(3), td:nth-child(3) { text-align: left; width: 90px; }
+th:nth-child(4), td:nth-child(4) { width: 82px; }
+th:nth-child(5), td:nth-child(5) { width: 82px; }
+th:nth-child(6), td:nth-child(6) { width: 88px; }
+th:nth-child(7), td:nth-child(7) { width: 92px; }
+th:nth-child(8), td:nth-child(8) { width: 92px; }
+.stock-cell-name { font-weight: 600; text-align: left; }
+.stock-cell-ticker { color: var(--muted); font-size: 10px; text-align: left; }
 .positive { color: var(--green); }
 .negative { color: var(--red); }
 .na { color: var(--muted); }
@@ -97,11 +109,13 @@ th:first-child, td:first-child { text-align: left; }
 footer { display: flex; justify-content: space-between; gap: 12px; color: #687a91; font-size: 10px; padding: 24px 2px 4px; }
 
 @media (max-width: 1100px) {
-  .stock-chart-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .summary-grid { grid-template-columns: 1fr 2fr; }
+  .cash-summary-card { grid-column: 1 / -1; }
+  .stock-chart-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 }
 @media (max-width: 980px) {
-  .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .stock-chart-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .summary-grid { grid-template-columns: 1fr 2fr; }
+  .stock-chart-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 @media (max-width: 600px) {
   .topbar { height: 62px; padding: 0 16px; }
@@ -110,29 +124,34 @@ footer { display: flex; justify-content: space-between; gap: 12px; color: #687a9
   .page-heading { align-items: flex-start; }
   .description { font-size: 12px; line-height: 1.6; }
   .market-status { font-size: 10px; padding: 7px 9px; }
-  .summary-grid { gap: 9px; }
-  .summary-card { padding: 15px; min-height: 112px; }
+  .summary-grid { grid-template-columns: 1fr 1fr; gap: 9px; }
+  .stock-summary-card { grid-column: 1 / -1; grid-row: 1; }
+  .cash-summary-card { grid-column: 1 / -1; }
+  .summary-card { padding: 13px; min-height: 105px; }
+  .stock-summary-metrics { gap: 8px; }
+  .stock-summary-metrics strong { font-size: 15px; }
+  .stock-summary-metrics span, .stock-summary-metrics small { font-size: 9px; }
   .summary-value { font-size: 21px; }
   .panel { padding: 16px 13px; }
   .section-heading { align-items: flex-start; }
   .period-label { font-size: 9px; }
   .portfolio-chart-wrap { height: 250px; }
-  .stock-chart-grid { grid-template-columns: 1fr; gap: 10px; }
-  .stock-card { padding: 14px; }
-  .stock-chart { height: 160px; }
+  .stock-chart-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+  .stock-card { padding: 7px; }
+  .stock-chart { height: 48px; }
   footer { flex-direction: column; }
 }
 
 .purpose-select { max-width: 105px; padding: 4px 6px; border: 1px solid var(--border); border-radius: 6px; background: #fff; color: var(--text); font: inherit; font-size: 11px; }
 .stock-chart-grid .stock-card { background: #fff; }
 @media (max-width: 600px) {
-  .stock-chart-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
-  .stock-chart { height: 82px; }
-  .stock-card { padding: 9px; }
-  .stock-card-head { margin-bottom: 6px; }
-  .stock-price { font-size: 10px; }
-  .stock-price small { font-size: 8px; }
-  .stock-meta { font-size: 8px; flex-direction: column; gap: 2px; }
+  .stock-chart-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+  .stock-chart { height: 48px; }
+  .stock-card { padding: 7px; }
+  .stock-card-head { margin-bottom: 4px; }
+  .stock-price { font-size: 9px; }
+  .stock-name { font-size: 10px; }
+  .stock-ticker { font-size: 8px; }
   .purpose-select { max-width: 90px; font-size: 10px; }
 }
 .cash-breakdown { margin-top: 9px; display: grid; gap: 4px; }
