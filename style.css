@@ -158,3 +158,7 @@ footer { display: flex; justify-content: space-between; gap: 12px; color: #687a9
 .cash-breakdown { margin-top: 9px; display: grid; gap: 4px; }
 .cash-breakdown-row { display: flex; justify-content: space-between; gap: 8px; color: var(--muted); font-size: 10px; }
 .cash-breakdown-row strong { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+
+.summary-change { margin-top: 6px; font-size: 12px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.summary-change[hidden] { display: none; }
