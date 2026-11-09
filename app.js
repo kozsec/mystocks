@@ -103,7 +103,7 @@ function groupHoldings(holdings) {
   }));
 }
 
-function renderSummary(holdings, prices, cashAssets) {
+function renderSummary(holdings, prices, cashAssets, dailyHistory) {
   let stockValue = 0;
   let totalCost = 0;
   let valuedCount = 0;
@@ -123,6 +123,26 @@ function renderSummary(holdings, prices, cashAssets) {
   const profit = stockValue - totalCost;
   const rate = totalCost > 0 ? profit / totalCost * 100 : null;
   byId("totalValue").textContent = yen(totalValue);
+
+  const daily = [...(dailyHistory || [])].sort((a, b) => a.date.localeCompare(b.date));
+  const today = new Date().toLocaleDateString("sv-SE", { timeZone: "Asia/Tokyo" });
+  const latestIndex = daily.length - 1;
+  const baselineIndex = latestIndex >= 0 && daily[latestIndex].date === today
+    ? latestIndex - 1
+    : latestIndex;
+  const baselineValue = baselineIndex >= 0 ? Number(daily[baselineIndex].total_value) : null;
+  const change = totalValue - baselineValue;
+  const changeElement = byId("dailyChange");
+  if (missingCount === 0 && baselineValue > 0 && Number.isFinite(change)) {
+    const changeRate = change / baselineValue * 100;
+    const direction = change > 0 ? "▲" : change < 0 ? "▼" : "±";
+    changeElement.textContent = `${direction} ${signedYen(change)} (${changeRate >= 0 ? "+" : ""}${changeRate.toFixed(2)}%) 前日比`;
+    changeElement.className = "summary-change " + (change > 0 ? "positive" : change < 0 ? "negative" : "");
+    changeElement.hidden = false;
+  } else {
+    changeElement.hidden = true;
+  }
+
   byId("stockValue").textContent = yen(stockValue);
   byId("cashValue").textContent = yen(cashValue);
   byId("totalCost").textContent = yen(totalCost);
@@ -252,7 +272,7 @@ async function init() {
       ? `最終更新 ${new Date(pricesData.updated_at).toLocaleString("ja-JP")}`
       : "株価データ未更新";
 
-    renderSummary(displayHoldings, prices, cashAssets);
+    renderSummary(displayHoldings, prices, cashAssets, portfolioHistoryData.daily || []);
     renderCashBreakdown(cashAssets);
     renderTable(displayHoldings, prices);
     renderStockCharts(displayHoldings, prices, histories);
