@@ -203,22 +203,28 @@ function renderStockCharts(holdings, prices, histories) {
   }
 }
 
-function renderTable(holdings, prices) {
+function renderTable(holdings, prices, histories) {
   const body = byId("holdingsTable");
   body.replaceChildren();
   const rows = holdings.map(stock => {
     const price = prices[stock.ticker];
+    const history = [...(histories[stock.ticker] || [])].sort((a, b) => a.date.localeCompare(b.date));
+    const previous = price ? history.filter(row => row.date < price.date).at(-1) : null;
+    const close = price ? Number(price.close) : null;
+    const previousClose = previous ? Number(previous.close) : null;
+    const dailyChangeRate = close != null && Number.isFinite(previousClose) && previousClose > 0
+      ? (close - previousClose) / previousClose * 100
+      : null;
     const shares = stock.shares == null ? null : Number(stock.shares);
     const averageCost = stock.average_cost == null ? null : Number(stock.average_cost);
-    const close = price ? Number(price.close) : null;
     const validShares = Number.isFinite(shares) && shares > 0;
     const value = validShares && close != null ? shares * close : null;
     const cost = validShares && Number.isFinite(averageCost) ? shares * averageCost : null;
     const profit = value != null && cost != null ? value - cost : null;
-    return {stock, shares, averageCost, close, validShares, value, profit};
+    return {stock, shares, averageCost, close, dailyChangeRate, validShares, value, profit};
   }).sort((a,b) => (b.profit ?? -Infinity) - (a.profit ?? -Infinity));
   for (const row of rows) {
-    const {stock, shares, averageCost, close, validShares, value, profit} = row;
+    const {stock, shares, averageCost, close, dailyChangeRate, validShares, value, profit} = row;
     const tr = document.createElement("tr");
     const name = document.createElement("td");
     name.className = "stock-cell-name";
@@ -231,13 +237,15 @@ function renderTable(holdings, prices) {
       shares == null ? "未入力" : validShares ? number(shares) + "株" : "—",
       averageCost == null ? "—" : yen(averageCost),
       close == null ? "—" : yen(close),
+      dailyChangeRate == null ? "—" : `${dailyChangeRate > 0 ? "+" : ""}${dailyChangeRate.toFixed(2)}%`,
       value == null ? "—" : yen(value),
       profit == null ? "—" : signedYen(profit)
     ];
     cells.forEach((valueText,index) => {
       const td = document.createElement("td");
       td.textContent = valueText;
-      if(index===4 && profit!=null) td.className = profit>=0 ? "positive" : "negative";
+      if(index===3 && dailyChangeRate!=null) td.className = dailyChangeRate>0 ? "positive" : dailyChangeRate<0 ? "negative" : "";
+      if(index===5 && profit!=null) td.className = profit>=0 ? "positive" : "negative";
       if(valueText==="—" || valueText==="未入力") td.classList.add("na");
       tr.append(td);
     });
@@ -274,7 +282,7 @@ async function init() {
 
     renderSummary(displayHoldings, prices, cashAssets, portfolioHistoryData.daily || []);
     renderCashBreakdown(cashAssets);
-    renderTable(displayHoldings, prices);
+    renderTable(displayHoldings, prices, histories);
     renderStockCharts(displayHoldings, prices, histories);
 
     const daily = portfolioHistoryData.daily || [];
