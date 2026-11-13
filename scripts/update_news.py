@@ -205,7 +205,38 @@ def fetch_tdnet(session, stocks, cutoff):
     return items, successful_batches
 
 
+def fetch_official_rss(session, source, cutoff):
+    response = session.get(source["url"], timeout=20)
+    response.raise_for_status()
+    root = ET.fromstring(response.content)
+    items = []
+
+    for entry in root.iter():
+        if local_name(entry.tag) not in ("item", "entry"):
+            continue
+        published = find_child_text(entry, {"pubdate", "published", "updated", "date", "issued"})
+        published_date = parse_date(published) or date_from_text(entry_values(entry))
+        if not published_date or published_date < cutoff:
+            continue
+        title = normalize_title(find_child_text(entry, {"title"}))
+        link = find_entry_link(entry)
+        if not title or len(title) < 5 or not link:
+            continue
+        items.append({
+            "date": published_date.isoformat(),
+            "ticker": source["ticker"],
+            "company": source["name"],
+            "title": title,
+            "source": "公式IR",
+            "category": classify(title),
+            "url": urljoin(source["url"], link)
+        })
+    return items
+
+
 def fetch_official_source(session, source, cutoff):
+    if source.get("type") == "rss":
+        return fetch_official_rss(session, source, cutoff)
     response = session.get(source["url"], timeout=20)
     response.raise_for_status()
     soup = BeautifulSoup(response.text, "html.parser")
