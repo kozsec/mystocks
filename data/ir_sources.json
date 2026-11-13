@@ -1,11 +1,11 @@
 {
   "updated_at": "2026-11-13T00:00:00+09:00",
-  "description": "保有銘柄の公式IR取得先。urlが空の銘柄は未確認。status=needs_reviewは取得先は確認できたが更新状況の再確認が必要。",
+  "description": "保有銘柄の公式IR・会社発表取得先。verifiedは公式ページ確認済み、candidateはURL候補、needs_reviewは更新状況の再確認が必要、not_foundは取得先未確認。",
   "sources": [
     {
       "ticker": "2737.T",
       "name": "トーメンデバイス",
-      "url": "https://www.tomendevices.co.jp/ir/news.html",
+      "url": "https://www.tomendevices.co.jp/ir/",
       "type": "html",
       "enabled": true,
       "status": "verified"
@@ -64,7 +64,7 @@
       "url": "https://corp.pilot.co.jp/ir/",
       "type": "html",
       "enabled": true,
-      "status": "verified"
+      "status": "candidate"
     },
     {
       "ticker": "1951.T",
@@ -157,7 +157,7 @@
     {
       "ticker": "4923.T",
       "name": "コタ",
-      "url": "https://www.cota.co.jp/ir/",
+      "url": "https://www.cota.co.jp/",
       "type": "html",
       "enabled": true,
       "status": "verified"
@@ -189,7 +189,7 @@
     {
       "ticker": "1379.T",
       "name": "ホクト",
-      "url": "https://www.hokto-kinoko.co.jp/corporate/ir/",
+      "url": "https://www.hokto-kinoko.co.jp/corporate/ir/news/",
       "type": "html",
       "enabled": true,
       "status": "verified"
@@ -397,7 +397,7 @@
     {
       "ticker": "3139.T",
       "name": "ラクトジャパン",
-      "url": "https://www.lactojapan.com/ja/ir.html",
+      "url": "https://www.lactojapan.com/ja/index.ht",
       "type": "html",
       "enabled": true,
       "status": "verified"
@@ -501,7 +501,7 @@
     {
       "ticker": "9470.T",
       "name": "学研HD",
-      "url": "https://www.gakken.co.jp/ja/news-media/irnews.html",
+      "url": "https://www.gakken.co.jp/ja/ir/news.html",
       "type": "html",
       "enabled": true,
       "status": "verified"
