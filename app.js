@@ -310,7 +310,7 @@ function renderNews(data) {
 
 async function init() {
   try {
-    const [holdingsResponse, pricesResponse, historyResponse, portfolioHistoryResponse] = await Promise.all([
+    const [holdingsResponse, pricesResponse, historyResponse, portfolioHistoryResponse, newsResponse] = await Promise.all([
       fetch("data/holdings.json"),
       fetch("data/prices.json"),
       fetch("data/history.json"),
