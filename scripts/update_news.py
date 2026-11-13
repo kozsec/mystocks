@@ -166,6 +166,14 @@ def fetch_tdnet(session, stocks, cutoff):
                 None
             )
             if not code:
+                code = next(
+                    (
+                        candidate for candidate, stock in stock_by_code.items()
+                        if len(stock.get("name", "")) >= 3 and stock["name"] in raw
+                    ),
+                    None
+                )
+            if not code:
                 continue
 
             published = (
