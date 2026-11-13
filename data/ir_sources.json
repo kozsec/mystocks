@@ -13,7 +13,7 @@
     {
       "ticker": "8035.T",
       "name": "東京エレクトロン",
-      "url": "https://www.tel.com/ir/",
+      "url": "https://www.tel.co.jp/ir/index.html",
       "type": "html",
       "enabled": true,
       "status": "verified"
@@ -485,7 +485,7 @@
     {
       "ticker": "6370.T",
       "name": "栗田工業",
-      "url": "https://www.kurita-water.com/ir/",
+      "url": "https://www.kurita-water.com/ir/index.html",
       "type": "html",
       "enabled": true,
       "status": "verified"
@@ -493,7 +493,7 @@
     {
       "ticker": "7867.T",
       "name": "タカラトミー",
-      "url": "https://www.takaratomy.co.jp/release/",
+      "url": "https://www.takaratomy.co.jp/ir/",
       "type": "html",
       "enabled": true,
       "status": "verified"
