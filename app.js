@@ -256,19 +256,73 @@ function renderTable(holdings, prices, histories) {
   }
   byId("tableCount").textContent = holdings.length + " 銘柄";
 }
+
+function renderNews(data) {
+  const container = byId("companyNews");
+  container.replaceChildren();
+  const news = data && Array.isArray(data.news) ? data.news : [];
+  byId("newsUpdated").textContent = data && data.updated_at
+    ? `更新 ${new Date(data.updated_at).toLocaleString("ja-JP")}`
+    : "初回取得待ち";
+  byId("newsCount").textContent = `${news.length}件`;
+
+  if (!news.length) {
+    const empty = document.createElement("div");
+    empty.className = "news-empty";
+    empty.textContent = data && data.updated_at
+      ? "直近7日間の会社発表はありません。"
+      : "ニュースデータはまだありません。GitHub Actionsの初回実行後に表示されます。";
+    container.append(empty);
+    return;
+  }
+
+  for (const item of news.slice(0, 60)) {
+    const article = document.createElement("article");
+    article.className = "news-item";
+
+    const meta = document.createElement("div");
+    meta.className = "news-meta";
+    const date = document.createElement("time");
+    date.textContent = item.date || "";
+    const company = document.createElement("span");
+    company.className = "news-company";
+    company.textContent = item.company || item.ticker || "";
+    const category = document.createElement("span");
+    category.className = "news-category";
+    category.textContent = item.category || "その他";
+    meta.append(date, company, category);
+
+    const link = document.createElement("a");
+    link.className = "news-title";
+    link.href = item.url || "#";
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = item.title || "タイトルなし";
+
+    const source = document.createElement("span");
+    source.className = "news-source";
+    source.textContent = item.source || "";
+
+    article.append(meta, link, source);
+    container.append(article);
+  }
+}
+
 async function init() {
   try {
     const [holdingsResponse, pricesResponse, historyResponse, portfolioHistoryResponse] = await Promise.all([
       fetch("data/holdings.json"),
       fetch("data/prices.json"),
       fetch("data/history.json"),
-      fetch("data/portfolio_history.json")
+      fetch("data/portfolio_history.json"),
+      fetch("data/news.json")
     ]);
     if (!holdingsResponse.ok) throw new Error("holdings.json を読み込めません。");
     const holdingsData = await holdingsResponse.json();
     const pricesData = pricesResponse.ok ? await pricesResponse.json() : { prices: {} };
     const historyData = historyResponse.ok ? await historyResponse.json() : { stocks: {} };
     const portfolioHistoryData = portfolioHistoryResponse.ok ? await portfolioHistoryResponse.json() : { daily: [] };
+    const newsData = newsResponse.ok ? await newsResponse.json() : null;
     const holdings = holdingsData.stocks || [];
     const displayHoldings = groupHoldings(holdings);
     const cashAssets = holdingsData.cash_assets || [];
@@ -284,6 +338,7 @@ async function init() {
     renderCashBreakdown(cashAssets);
     renderTable(displayHoldings, prices, histories);
     renderStockCharts(displayHoldings, prices, histories);
+    renderNews(newsData);
 
     const daily = portfolioHistoryData.daily || [];
     if (daily.length) {
