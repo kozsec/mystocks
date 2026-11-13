@@ -93,7 +93,7 @@
     {
       "ticker": "9347.T",
       "name": "日本管財",
-      "url": "https://www.nkanzaihd.co.jp/ir/",
+      "url": "https://www.nkanzaihd.co.jp/news/?cat=ir_news",
       "type": "html",
       "enabled": true,
       "status": "verified"
@@ -325,7 +325,7 @@
     {
       "ticker": "2001.T",
       "name": "ニップン",
-      "url": "https://www.nippn.co.jp/ir/ir_news/",
+      "url": "https://www.nippn.co.jp/ir/ir_news/index.html",
       "type": "html",
       "enabled": true,
       "status": "verified"
