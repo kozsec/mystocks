@@ -83,7 +83,7 @@ def classify(title):
         return "M&A・事業"
     if any(word in value for word in ("代表取締役", "役員", "人事異動", "組織変更", "社長")):
         return "人事・組織"
-    if any(word in value for word in ("不正アクセス", "情報漏えい", "情報流出", "個人情報", "システム障害", "サイバー")):
+    if any(word in value for word in ("不正アクセス", "情報漏えい", "情報流出", "個人情報", "システム障害", "サイバー", "情報漏洩", "障害")):
         return "インシデント"
     return "その他"
 
@@ -141,7 +141,7 @@ def fetch_tdnet(session, stocks, cutoff):
             + ".atom?limit=300"
         )
         try:
-            response = session.get(endpoint, timeout=25)
+            response = session.get(endpoint, timeout=20)
             response.raise_for_status()
             root = ET.fromstring(response.content)
             successful_batches += 1
@@ -214,7 +214,7 @@ def fetch_tdnet(session, stocks, cutoff):
 
 
 def fetch_official_rss(session, source, cutoff):
-    response = session.get(source["url"], timeout=20)
+    response = session.get(source["url"], timeout=10)
     response.raise_for_status()
     root = ET.fromstring(response.content)
     items = []
@@ -245,7 +245,7 @@ def fetch_official_rss(session, source, cutoff):
 def fetch_official_source(session, source, cutoff):
     if source.get("type") == "rss":
         return fetch_official_rss(session, source, cutoff)
-    response = session.get(source["url"], timeout=20)
+    response = session.get(source["url"], timeout=10)
     response.raise_for_status()
     soup = BeautifulSoup(response.text, "html.parser")
     items = []
