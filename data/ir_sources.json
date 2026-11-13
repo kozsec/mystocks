@@ -1,0 +1,510 @@
+{
+  "updated_at": "2026-11-13T00:00:00+09:00",
+  "description": "保有銘柄の公式IR取得先。urlが空の銘柄は未確認。status=needs_reviewは取得先は確認できたが更新状況の再確認が必要。",
+  "sources": [
+    {
+      "ticker": "2737.T",
+      "name": "トーメンデバイス",
+      "url": "https://www.tomendevices.co.jp/ir/news.html",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "8035.T",
+      "name": "東京エレクトロン",
+      "url": "https://www.tel.com/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "2702.T",
+      "name": "マクドナルド",
+      "url": "https://www.mcd-holdings.co.jp/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "8591.T",
+      "name": "オリックス",
+      "url": "https://www.orix.co.jp/grp/company/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "9433.T",
+      "name": "KDDI",
+      "url": "https://www.kddi.com/corporate/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "2207.T",
+      "name": "名糖産業",
+      "url": "https://www.meito-sangyo.co.jp/ir/",
+      "type": "html",
+      "enabled": false,
+      "status": "needs_review"
+    },
+    {
+      "ticker": "4526.T",
+      "name": "理研ビタミン",
+      "url": "https://www.rikenvitamin.jp/corporate/ir/topics/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "7846.T",
+      "name": "パイロット",
+      "url": "https://corp.pilot.co.jp/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "1951.T",
+      "name": "エクシオ",
+      "url": "https://www.exeo.co.jp/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "2573.T",
+      "name": "北海道コカコーラ",
+      "url": "https://www.hokkaido.ccbc.co.jp/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "3003.T",
+      "name": "ヒューリック",
+      "url": "https://www.hulic.co.jp/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "9347.T",
+      "name": "日本管財",
+      "url": "https://www.nkanzaihd.co.jp/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "8153.T",
+      "name": "モスフードサービス",
+      "url": "https://www.mos.co.jp/company/ir/library/release/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "7972.T",
+      "name": "イトーキ",
+      "url": "https://www.itoki.jp/company/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "8793.T",
+      "name": "NECキャピタルソリューション",
+      "url": "",
+      "type": "html",
+      "enabled": false,
+      "status": "not_found"
+    },
+    {
+      "ticker": "2296.T",
+      "name": "伊藤ハム",
+      "url": "https://www.itoham-yonekyu-holdings.com/ir/related_release.html",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "1377.T",
+      "name": "サカタのタネ",
+      "url": "https://corporate.sakataseed.co.jp/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "9381.T",
+      "name": "エーアイティー",
+      "url": "https://www.ait-jp.com/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "2816.T",
+      "name": "ダイショー",
+      "url": "https://www.daisho.co.jp/ir/news",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "4923.T",
+      "name": "コタ",
+      "url": "https://www.cota.co.jp/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "9759.T",
+      "name": "NSD",
+      "url": "https://www.nsd.co.jp/ir/news.html",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "7272.T",
+      "name": "ヤマハ発動機",
+      "url": "https://global.yamaha-motor.com/jp/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "4326.T",
+      "name": "インテージ",
+      "url": "https://www.intageholdings.co.jp/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "1379.T",
+      "name": "ホクト",
+      "url": "https://www.hokto-kinoko.co.jp/corporate/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "3382.T",
+      "name": "7&iホールディングス",
+      "url": "https://www.7andi.com/ir/disclose/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "3543.T",
+      "name": "コメダ",
+      "url": "https://komeda-holdings.co.jp/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "8801.T",
+      "name": "三井不動産",
+      "url": "https://www.mitsuifudosan.co.jp/corporate/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "2670.T",
+      "name": "ABCマート",
+      "url": "https://www.abc-mart.co.jp/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "2209.T",
+      "name": "井村屋",
+      "url": "https://www.imuraya-group.com/ir/news/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "2819.T",
+      "name": "エバラ食品",
+      "url": "https://www.ebarafoods.com/company/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "2801.T",
+      "name": "キッコーマン",
+      "url": "https://www.kikkoman.com/jp/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "7893.T",
+      "name": "プロネクサス",
+      "url": "https://support.pronexus.co.jp/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "7974.T",
+      "name": "任天堂",
+      "url": "https://www.nintendo.co.jp/ir/index.html",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "4063.T",
+      "name": "信越化学工業",
+      "url": "https://www.shinetsu.co.jp/jp/category/news/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "2897.T",
+      "name": "日清食品",
+      "url": "https://www.nissin.com/jp/company/ir/news/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "7735.T",
+      "name": "SCREEN",
+      "url": "https://www.screen.co.jp/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "2612.T",
+      "name": "かどや",
+      "url": "https://www.kadoya.com/ir/news/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "9861.T",
+      "name": "吉野家",
+      "url": "https://www.xj-storage.jp/public-list/GetList.aspx?company=AS08813&output=rss&len=20",
+      "type": "rss",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "2579.T",
+      "name": "コカコーラ",
+      "url": "https://www.ccbj-holdings.com/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "5243.T",
+      "name": "note",
+      "url": "https://ir.note.jp/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "2001.T",
+      "name": "ニップン",
+      "url": "https://www.nippn.co.jp/ir/ir_news/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "2269.T",
+      "name": "明治",
+      "url": "",
+      "type": "html",
+      "enabled": false,
+      "status": "not_found"
+    },
+    {
+      "ticker": "3612.T",
+      "name": "ワールド",
+      "url": "https://corp.world.co.jp/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "4665.T",
+      "name": "ダスキン",
+      "url": "https://www.duskin.co.jp/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "2503.T",
+      "name": "キリン",
+      "url": "https://www.kirinholdings.com/jp/investors/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "6586.T",
+      "name": "マキタ",
+      "url": "https://www.makita.co.jp/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "1928.T",
+      "name": "積水ハウス",
+      "url": "https://www.sekisuihouse.co.jp/company/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "8227.T",
+      "name": "しまむら",
+      "url": "https://www.shimamura.gr.jp/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "4848.T",
+      "name": "フルキャストHD",
+      "url": "https://www.fullcastholdings.co.jp/corporate/ir/news/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "3139.T",
+      "name": "ラクトジャパン",
+      "url": "https://www.lactojapan.com/ja/ir.html",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "4005.T",
+      "name": "住友化学",
+      "url": "https://www.sumitomo-chem.co.jp/ir/news/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "3922.T",
+      "name": "PRTIMES",
+      "url": "https://prtimes.co.jp/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "6902.T",
+      "name": "デンソー",
+      "url": "https://www.denso.com/jp/ja/investors/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "3046.T",
+      "name": "JINS HD",
+      "url": "https://jinsholdings.com/jp/ja/newsroom/list?main=ir",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "3962.T",
+      "name": "チェンジHD",
+      "url": "https://www.changeholdings.co.jp/ir/news/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "6200.T",
+      "name": "インソース",
+      "url": "https://www.insource.co.jp/ir/index.html",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "6368.T",
+      "name": "オルガノ",
+      "url": "https://www.organo.co.jp/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "5201.T",
+      "name": "AGC",
+      "url": "https://www.agc.com/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "2379.T",
+      "name": "ディップ",
+      "url": "https://www.dip-net.co.jp/ir/ir-news/news-list",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "7033.T",
+      "name": "MSOL",
+      "url": "https://www.msols.com/ir/news/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "6370.T",
+      "name": "栗田工業",
+      "url": "https://www.kurita-water.com/ir/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "7867.T",
+      "name": "タカラトミー",
+      "url": "https://www.takaratomy.co.jp/release/",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    },
+    {
+      "ticker": "9470.T",
+      "name": "学研HD",
+      "url": "https://www.gakken.co.jp/ja/news-media/irnews.html",
+      "type": "html",
+      "enabled": true,
+      "status": "verified"
+    }
+  ]
+}
