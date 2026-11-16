@@ -1,9 +1,10 @@
 {
-  "updated_at": "2026-11-13T23:27:25+09:00",
+  "updated_at": "2026-11-17T02:18:46+09:00",
   "period_days": 7,
   "tdnet_provider": "Yanoshin TDnet WEB-API（非公式）",
-  "official_sources_checked": 56,
+  "official_sources_checked": 55,
   "official_sources_failed": [
+    "1379.T",
     "1928.T",
     "8227.T",
     "6902.T",
@@ -45,6 +46,123 @@
       "source": "公式IR",
       "category": "その他",
       "url": "https://www.tel.co.jp/ir/calendar/index.html"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "4526.T",
+      "company": "理研ビタミン",
+      "title": "企業情報サイト",
+      "source": "公式IR",
+      "category": "その他",
+      "url": "https://www.rikenvitamin.jp/corporate/"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "4526.T",
+      "company": "理研ビタミン",
+      "title": "ニュース一覧",
+      "source": "公式IR",
+      "category": "その他",
+      "url": "https://www.rikenvitamin.jp/news/"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "4526.T",
+      "company": "理研ビタミン",
+      "title": "2026.11.16 業績・決算 NEW 2027年3月期 第2四半期（中間期） スクリプト、質疑応答を掲載しました。",
+      "source": "公式IR",
+      "category": "決算・業績",
+      "url": "https://www.rikenvitamin.jp/corporate/ir/library/explain/"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "4665.T",
+      "company": "ダスキン",
+      "title": "ダスキン:従業員持株会を通じた譲渡制限付株式付与のための第三者割当による自己株式の処分に係る処分価額の決定に関するお知らせ",
+      "source": "TDnet",
+      "category": "資本政策",
+      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261112576954.pdf"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "6200.T",
+      "company": "インソース",
+      "title": "取締役候補者及び監査役候補者の選任に関するお知らせ",
+      "source": "公式IR",
+      "category": "その他",
+      "url": "https://www.insource.co.jp/gaiyo/news26111602.html"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "6200.T",
+      "company": "インソース",
+      "title": "剰余金の配当に関するお知らせ",
+      "source": "公式IR",
+      "category": "配当",
+      "url": "https://www.insource.co.jp/gaiyo/news26111604.html"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "6200.T",
+      "company": "インソース",
+      "title": "人事異動に関するお知らせ",
+      "source": "公式IR",
+      "category": "人事・組織",
+      "url": "https://www.insource.co.jp/gaiyo/news26111603.html"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "6200.T",
+      "company": "インソース",
+      "title": "トップページ",
+      "source": "公式IR",
+      "category": "その他",
+      "url": "https://www.insource.co.jp/index.html"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "6200.T",
+      "company": "インソース",
+      "title": "インソースとベネッセコーポレーション 「Leafシリーズ」と「Udemy Business」のシステム連携に向けた取り組みを推進",
+      "source": "公式IR",
+      "category": "その他",
+      "url": "https://www.insource.co.jp/gaiyo/news26111601.html"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "6200.T",
+      "company": "インソース",
+      "title": "インソース:取締役候補者及び監査役候補者の選任に関するお知らせ",
+      "source": "TDnet",
+      "category": "その他",
+      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261116580801.pdf"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "6200.T",
+      "company": "インソース",
+      "title": "インソース:剰余金の配当に関するお知らせ",
+      "source": "TDnet",
+      "category": "配当",
+      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261116580780.pdf"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "6200.T",
+      "company": "インソース",
+      "title": "インソース:人事異動に関するお知らせ",
+      "source": "TDnet",
+      "category": "人事・組織",
+      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261116580805.pdf"
+    },
+    {
+      "date": "2026-11-16",
+      "ticker": "6200.T",
+      "company": "インソース",
+      "title": "→ IRニュース・情報一覧はこちら",
+      "source": "公式IR",
+      "category": "その他",
+      "url": "https://www.insource.co.jp/gaiyo/news2027.html?newsType=IR"
     },
     {
       "date": "2026-11-13",
@@ -131,87 +249,6 @@
       "date": "2026-11-13",
       "ticker": "1379.T",
       "company": "ホクト",
-      "title": "自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.hokto-kinoko.co.jp/kaiin/entryform.php"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.hokto-kinoko.co.jp/kaiin/login.php"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "自己株式取得に係る事項の決定に関するお知らせ",
-      "source": "公式IR",
-      "category": "資本政策",
-      "url": "https://ssl4.eir-parts.net/doc/1379/tdnet/2915381/00.pdf"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "採用情報 新卒採用情報 自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "http://www.hokto-kinoko.co.jp/employ/"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "採用情報 採用情報 新卒採用情報 自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.hokto-kinoko.co.jp/employ/"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "投資家の皆様へ",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.hokto-kinoko.co.jp/corporate/ir/"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "会員限定情報を受け取る[無料会員登録]",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.hokto-kinoko.co.jp/kaiin/entryconfirm.php"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "企業情報 企業情報 社長から、皆様へ コーポレート・メッセージ ホクトの目指す姿 会社概要 事業所・グループ企業 世界への展開 役員 ホクトの歴史 ホクトCI ホクト10のキーワード 営業部門 生産部門 自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.hokto-kinoko.co.jp/corporate/kigyou/"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "リアルタイム株価を見る",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://stocks.finance.yahoo.co.jp/stocks/detail/?code=1379.T"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "1379.T",
-      "company": "ホクト",
       "title": "ホクト:自己株式取得に係る事項の決定に関するお知らせ",
       "source": "TDnet",
       "category": "資本政策",
@@ -234,96 +271,6 @@
       "source": "TDnet",
       "category": "決算・業績",
       "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261112576732.pdf"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "きのこ総合研究所",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.hokto-kinoko.co.jp/corporate/kenkyu/"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "お客様相談室",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.hokto-kinoko.co.jp/soudanshitsu/"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "Language",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.hokto-kinoko.co.jp/lang/"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "HOKTO 企業情報 企業情報 社長から、皆様へ コーポレート・メッセージ ホクトの目指す姿 会社概要 事業所・グループ企業 世界への展開 役員 ホクトの歴史 ホクトCI ホクト10のキーワード 営業部門 生産部門 自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ 投資家の皆様へ 投資家の皆様へ 財務・業績 IR資料 SDGsへの取り組み 株式情報 株主優待制度 株式手続きについて よくある質問 IRカレンダー 電子公告 自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ CSR CSR CSR 対談 安全品質マネジメント スポーツ・文化振興 ホクト生物科学振興財団 環境への取組み がん征圧運動 きのこで食育 地域貢献 お客様のご満足のために 自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ きのこ総合研究所 きのこ総合研究所 研究所の概要 おいしさへの探求 世界の健康食\"きのこ” 研究者からのメッセージ 独自技術による研究開発 学会・論文発表 自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ 採用情報 採用情報 新卒採用情報 自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ 商品・レシピ情報 商品・レシピ情報 自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ お客様相談室 お客様相談室 自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ Language Language English 自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ 会員限定情報を受け取る[無料会員登録]",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.hokto-kinoko.co.jp/corporate"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "HOKTO HOKTO 企業情報 企業情報 社長から、皆様へ コーポレート・メッセージ ホクトの目指す姿 会社概要 事業所・グループ企業 世界への展開 役員 ホクトの歴史 ホクトCI ホクト10のキーワード 営業部門 生産部門 自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ 投資家の皆様へ 投資家の皆様へ 財務・業績 IR資料 SDGsへの取り組み 株式情報 株主優待制度 株式手続きについて よくある質問 IRカレンダー 電子公告 自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ CSR CSR CSR 対談 安全品質マネジメント スポーツ・文化振興 ホクト生物科学振興財団 環境への取組み がん征圧運動 きのこで食育 地域貢献 お客様のご満足のために 自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ きのこ総合研究所 きのこ総合研究所 研究所の概要 おいしさへの探求 世界の健康食\"きのこ” 研究者からのメッセージ 独自技術による研究開発 学会・論文発表 自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ 採用情報 採用情報 新卒採用情報 自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ 商品・レシピ情報 商品・レシピ情報 自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ お客様相談室 お客様相談室 自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ Language Language English 自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ 会員限定情報を受け取る[無料会員登録] ログイン リアルタイム株価を見る",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.hokto-kinoko.co.jp"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "HOKTO",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.hokto-kinoko.co.jp/"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "CSR CSR CSR 対談 安全品質マネジメント スポーツ・文化振興 ホクト生物科学振興財団 環境への取組み がん征圧運動 きのこで食育 地域貢献 お客様のご満足のために 自己株式取得に係る事項の決定に関するお知らせ 2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結） 2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ 2027年3月期 半期報告書 長野県が発行する「グリーンボンド」への投資について ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.hokto-kinoko.co.jp/corporate/csr/"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "2027年３月期第２四半期（中間期）における連結及び個別業績予想と実績との差異に関するお知らせ",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://ssl4.eir-parts.net/doc/1379/tdnet/2915343/00.pdf"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://ssl4.eir-parts.net/doc/1379/tdnet/2915375/00.pdf"
-    },
-    {
-      "date": "2026-11-13",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "2027年3月期 半期報告書",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://ssl4.eir-parts.net/doc/1379/yuho_pdf/S100ZG7X/00.pdf"
     },
     {
       "date": "2026-11-13",
@@ -423,24 +370,6 @@
       "source": "TDnet",
       "category": "決算・業績",
       "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261110570702.pdf"
-    },
-    {
-      "date": "2026-11-12",
-      "ticker": "4526.T",
-      "company": "理研ビタミン",
-      "title": "企業情報サイト",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.rikenvitamin.jp/corporate/"
-    },
-    {
-      "date": "2026-11-12",
-      "ticker": "4526.T",
-      "company": "理研ビタミン",
-      "title": "ニュース一覧",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.rikenvitamin.jp/news/"
     },
     {
       "date": "2026-11-12",
@@ -1233,375 +1162,6 @@
       "source": "公式IR",
       "category": "決算・業績",
       "url": "https://cota-store.jp/shop/"
-    },
-    {
-      "date": "2026-11-09",
-      "ticker": "4063.T",
-      "company": "信越化学工業",
-      "title": "2026.11.09 IR コミットメント型自己株式取得（FCSR）における事後調整のお知らせ pdf",
-      "source": "公式IR",
-      "category": "資本政策",
-      "url": "https://www.shinetsu.co.jp/wp-content/uploads/2026/11/20261109J-1.pdf"
-    },
-    {
-      "date": "2026-11-09",
-      "ticker": "7846.T",
-      "company": "パイロット",
-      "title": "パイロット:業績予想の修正に関するお知らせ",
-      "source": "TDnet",
-      "category": "決算・業績",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261109569012.pdf"
-    },
-    {
-      "date": "2026-11-09",
-      "ticker": "7846.T",
-      "company": "パイロット",
-      "title": "パイロット:2026年12月期第３四半期決算短信〔日本基準〕(連結)",
-      "source": "TDnet",
-      "category": "決算・業績",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261109568983.pdf"
-    },
-    {
-      "date": "2026-11-09",
-      "ticker": "7846.T",
-      "company": "パイロット",
-      "title": "IRカレンダー",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://corp.pilot.co.jp/ir/calendar/"
-    },
-    {
-      "date": "2026-11-09",
-      "ticker": "4923.T",
-      "company": "コタ",
-      "title": "自己株式の取得及び自己株式立会外買付取引（ToSTNeT-3）による 自己株式の買付けに関するお知らせ",
-      "source": "公式IR",
-      "category": "資本政策",
-      "url": "https://ssl4.eir-parts.net/doc/4923/tdnet/2908615/00.pdf"
-    },
-    {
-      "date": "2026-11-09",
-      "ticker": "6368.T",
-      "company": "オルガノ",
-      "title": "オルガノ:2027年3月期上期決算説明会資料",
-      "source": "TDnet",
-      "category": "決算・業績",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261106568132.pdf"
-    },
-    {
-      "date": "2026-11-09",
-      "ticker": "8591.T",
-      "company": "オリックス",
-      "title": "オリックス:持分法投資利益の計上に関するお知らせ",
-      "source": "TDnet",
-      "category": "その他",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261105566276.pdf"
-    },
-    {
-      "date": "2026-11-09",
-      "ticker": "8591.T",
-      "company": "オリックス",
-      "title": "オリックス:2027年３月期 第２四半期（中間期）決算短信〔米国基準〕（連結）",
-      "source": "TDnet",
-      "category": "決算・業績",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261102563278.pdf"
-    },
-    {
-      "date": "2026-11-09",
-      "ticker": "8591.T",
-      "company": "オリックス",
-      "title": "オリックス:2027年3月期の剰余金配当（中間配当）の決定に関するお知らせ",
-      "source": "TDnet",
-      "category": "配当",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261106567789.pdf"
-    },
-    {
-      "date": "2026-11-09",
-      "ticker": "6200.T",
-      "company": "インソース",
-      "title": "→ IR全力Q&Aはこちら",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.insource.co.jp/ir/ir_faq/index.html"
-    },
-    {
-      "date": "2026-11-09",
-      "ticker": "2612.T",
-      "company": "かどや",
-      "title": "かどや製油:（変更）「株式会社ITG-Gホールディングスによる当社株式に対する公開買付けに関する賛同の意見表明及び応募推奨のお知らせ」の一部変更に関するお知らせ",
-      "source": "TDnet",
-      "category": "M&A・事業",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261109568624.pdf"
-    },
-    {
-      "date": "2026-11-09",
-      "ticker": "2612.T",
-      "company": "かどや",
-      "title": "2026.11.09 NEW （変更）「株式会社ITG-Gホールディングスによる当社株式に対する 公開買付けに関する賛同の意見表明及び応募推奨のお知らせ」の一部変更に関するお知らせ",
-      "source": "公式IR",
-      "category": "M&A・事業",
-      "url": "https://www.kadoya.com/ir/system/wp-content/uploads/2026/11/69e951f5a858ddfced9b05429603a26d.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "2209.T",
-      "company": "井村屋",
-      "title": "第90期 半期報告書",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.imuraya-group.com/common_files/media/2026/11/20261106_hankihoukokusyo.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "2209.T",
-      "company": "井村屋",
-      "title": "井村屋Ｇ:2027年3月期 第2四半期（中間期）決算短信〔日本基準〕（連結）",
-      "source": "TDnet",
-      "category": "決算・業績",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261026555734.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "2209.T",
-      "company": "井村屋",
-      "title": "井村屋グループ株式会社",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.imuraya-group.com/"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "2209.T",
-      "company": "井村屋",
-      "title": "サイトポリシー",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.imuraya-group.com/sitepolicy/"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "2209.T",
-      "company": "井村屋",
-      "title": "2027年3月期 第2四半期決算短信（英文）",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.imuraya-group.com/common_files/media/2026/11/2027shihanki_dai2English.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "2209.T",
-      "company": "井村屋",
-      "title": "2027年3月期 第2四半期決算短信",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.imuraya-group.com/common_files/media/2026/11/2027shihanki_dai2.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "2702.T",
-      "company": "マクドナルド",
-      "title": "マクドナルド:月次IRニュース",
-      "source": "TDnet",
-      "category": "その他",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261106566926.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "4848.T",
-      "company": "フルキャストHD",
-      "title": "2026.11.06 決算短信 2026年12月期 第３四半期決算短信〔日本基準〕（連結）",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.fullcastholdings.co.jp/assets/upload/2026/11/financialresults_20263Q.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "4848.T",
-      "company": "フルキャストHD",
-      "title": "2026.11.06 IR資料 2026年12月期 第３四半期連結業績概要",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.fullcastholdings.co.jp/assets/upload/2026/11/presentation_20263Q.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "2001.T",
-      "company": "ニップン",
-      "title": "企業・IR TOPページへ戻る",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.nippn.co.jp/company_ir/index.html"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "2001.T",
-      "company": "ニップン",
-      "title": "ニップン:2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
-      "source": "TDnet",
-      "category": "決算・業績",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261106567082.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "2001.T",
-      "company": "ニップン",
-      "title": "ニップン:(株)ニップン 中間期の連結業績および通期連結業績予想",
-      "source": "TDnet",
-      "category": "決算・業績",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261106567053.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "2001.T",
-      "company": "ニップン",
-      "title": "2026年度3月期 第2四半期 決算短信を発表しました",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "http://www.nippn.co.jp/ir/announcement/tanshin/index.html"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "4665.T",
-      "company": "ダスキン",
-      "title": "ダスキン:自己株式取得に係る事項の決定に関するお知らせ",
-      "source": "TDnet",
-      "category": "資本政策",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261106566712.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "4665.T",
-      "company": "ダスキン",
-      "title": "ダスキン:従業員持株会を通じた譲渡制限付株式付与のための第三者割当による自己株式の処分に関するお知らせ",
-      "source": "TDnet",
-      "category": "資本政策",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261106566751.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "4665.T",
-      "company": "ダスキン",
-      "title": "ダスキン:2027年3月期 第2四半期（中間期）決算短信〔日本基準〕(連結)",
-      "source": "TDnet",
-      "category": "決算・業績",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261106564920.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "1377.T",
-      "company": "サカタのタネ",
-      "title": "サカタのタネ:自己株式の取得状況に関するお知らせ",
-      "source": "TDnet",
-      "category": "資本政策",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261104563933.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "2819.T",
-      "company": "エバラ食品",
-      "title": "エバラ食品工業:自己株式取得に係る事項の決定に関するお知らせ",
-      "source": "TDnet",
-      "category": "資本政策",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261105566134.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "2819.T",
-      "company": "エバラ食品",
-      "title": "エバラ食品工業:業績予想の修正に関するお知らせ",
-      "source": "TDnet",
-      "category": "決算・業績",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261105566153.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "2819.T",
-      "company": "エバラ食品",
-      "title": "エバラ食品工業:2027年3月期 第2四半期（中間期）決算短信〔日本基準〕（連結）",
-      "source": "TDnet",
-      "category": "決算・業績",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261105566587.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "2819.T",
-      "company": "エバラ食品",
-      "title": "エバラ食品工業:2027年3月期 中間期決算説明資料",
-      "source": "TDnet",
-      "category": "決算・業績",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261105566321.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "1951.T",
-      "company": "エクシオ",
-      "title": "エクシオグループ:自己株式の消却に関するお知らせ",
-      "source": "TDnet",
-      "category": "資本政策",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261106567236.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "1951.T",
-      "company": "エクシオ",
-      "title": "エクシオグループ:2027年３月期第２四半期（中間期）決算短信〔日本基準〕(連結)",
-      "source": "TDnet",
-      "category": "決算・業績",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261106567155.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "1951.T",
-      "company": "エクシオ",
-      "title": "エクシオグループ:2026年度(2027年３月期)第２四半期決算補足資料",
-      "source": "TDnet",
-      "category": "決算・業績",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261106567225.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "6200.T",
-      "company": "インソース",
-      "title": "年末年始に学ぶ生成AI「冬の自己研鑽キャンペーン」を開始 ～夏の好評企画を受け、Copilot・Geminiなど全９コースを開講",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.insource.co.jp/gaiyo/news26110601.html"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "2612.T",
-      "company": "かどや",
-      "title": "かどや製油:（変更）「株式会社ITG-Gホールディングスによる当社株式に対する公開買付けに関する賛同の意見表明及び応募推奨のお知らせ」の一部変更に関するお知らせ",
-      "source": "TDnet",
-      "category": "M&A・事業",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261106567935.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "2612.T",
-      "company": "かどや",
-      "title": "2026.11.06 NEW （変更）「 株式会社ITG-Gホールディングスによる当社株式に対する 公開買付けに関する賛同の意見表明及び応募推奨のお知らせ」の一部変更に関するお知らせ",
-      "source": "公式IR",
-      "category": "M&A・事業",
-      "url": "https://www.kadoya.com/ir/system/wp-content/uploads/2026/11/ced20c154c997a862bff0a3894a1bf16-1.pdf"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "9433.T",
-      "company": "KDDI",
-      "title": "IRカレンダー",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.kddi.com/corporate/ir/calendar/"
-    },
-    {
-      "date": "2026-11-06",
-      "ticker": "9433.T",
-      "company": "KDDI",
-      "title": "2027年3月期 第2四半期決算説明会 2026年11月6日 決算発表",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.kddi.com/corporate/ir/ir-library/presentation/"
     }
   ]
 }
