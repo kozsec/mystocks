@@ -1,10 +1,11 @@
 {
-  "updated_at": "2026-11-27T02:50:51+09:00",
+  "updated_at": "2026-11-28T02:36:16+09:00",
   "period_days": 7,
   "tdnet_provider": "Yanoshin TDnet WEB-API（非公式）",
-  "official_sources_checked": 55,
+  "official_sources_checked": 54,
   "official_sources_failed": [
     "2296.T",
+    "1379.T",
     "1928.T",
     "8227.T",
     "6902.T",
@@ -46,6 +47,78 @@
       "source": "公式IR",
       "category": "その他",
       "url": "https://www.tel.co.jp/ir/calendar/index.html"
+    },
+    {
+      "date": "2026-11-27",
+      "ticker": "9347.T",
+      "company": "日本管財",
+      "title": "日本管財ＨＤ:親会社等の決算に関するお知らせ",
+      "source": "TDnet",
+      "category": "決算・業績",
+      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261127587463.pdf"
+    },
+    {
+      "date": "2026-11-27",
+      "ticker": "9347.T",
+      "company": "日本管財",
+      "title": "日本管財ホールディングス 2027年3月期 半期報告書を掲載いたしました",
+      "source": "公式IR",
+      "category": "その他",
+      "url": "https://www.nkanzaihd.co.jp/ir/investors/"
+    },
+    {
+      "date": "2026-11-27",
+      "ticker": "9861.T",
+      "company": "吉野家",
+      "title": "コーポレート・ガバナンスに関する報告書 2026/11/27",
+      "source": "公式IR",
+      "category": "その他",
+      "url": "https://contents.xj-storage.jp/xcontents/AS08813/3a113105/a925/4be6/8f05/c20d94283889/140120261120584122.pdf"
+    },
+    {
+      "date": "2026-11-27",
+      "ticker": "9861.T",
+      "company": "吉野家",
+      "title": "コーポレートガバナンス報告書を更新しました（ページ最下部）",
+      "source": "公式IR",
+      "category": "その他",
+      "url": "https://www.yoshinoya-holdings.com/csr/esg_governance/cg_way_of_thinking/"
+    },
+    {
+      "date": "2026-11-27",
+      "ticker": "3612.T",
+      "company": "ワールド",
+      "title": "ワールド:当社持分法適用関連会社によるMARK STYLER株式会社の事業承継を目的とした同社事業を承継する承継新会社の完全子会社化に関するお知らせ",
+      "source": "TDnet",
+      "category": "M&A・事業",
+      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261127587644.pdf"
+    },
+    {
+      "date": "2026-11-27",
+      "ticker": "3003.T",
+      "company": "ヒューリック",
+      "title": "ヒューリック:株式会社リソー教育グループ（証券コード：4714）の株券等に対する公開買付けの結果に関するお知らせ",
+      "source": "TDnet",
+      "category": "M&A・事業",
+      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261126586894.pdf"
+    },
+    {
+      "date": "2026-11-27",
+      "ticker": "7867.T",
+      "company": "タカラトミー",
+      "title": "ã°ã«ã¼ãä¼ç¤¾ãªãªã¼ã¹ä¸è¦§",
+      "source": "公式IR",
+      "category": "その他",
+      "url": "https://www.takaratomy.co.jp/release/group/"
+    },
+    {
+      "date": "2026-11-27",
+      "ticker": "7867.T",
+      "company": "タカラトミー",
+      "title": "ãããªãã£ã¼ã·ãªã¼ãºãææ°ä½ããã­ããã¢ã¤ããªãã¢ãã¥ã¼ãºã¡ã³ãã²ã¼ã ããã­ããã¢ã¤ããª ï¼ã ããã12æ3æ¥ï¼æ¨ï¼ããé æ¬¡ã¹ã¿ã¼ãå¥³ç¥ã®å§¿ã«ãªã£ãããã©ã¼ãã¥ããç»å ´ï¼ããã«ããã£ãºãã¼ã³ã¼ãã³ã¬ã¯ã·ã§ã³ããããããã¹ã¿ã¼ãï¼",
+      "source": "公式IR",
+      "category": "その他",
+      "url": "https://www.takaratomy.co.jp/group_release/pdf/g261127.pdf"
     },
     {
       "date": "2026-11-26",
@@ -168,154 +241,10 @@
       "date": "2026-11-26",
       "ticker": "1379.T",
       "company": "ホクト",
-      "title": "自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.hokto-kinoko.co.jp/kaiin/entryform.php"
-    },
-    {
-      "date": "2026-11-26",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.hokto-kinoko.co.jp/kaiin/login.php"
-    },
-    {
-      "date": "2026-11-26",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ",
-      "source": "公式IR",
-      "category": "資本政策",
-      "url": "https://ssl4.eir-parts.net/doc/1379/tdnet/2922314/00.pdf"
-    },
-    {
-      "date": "2026-11-26",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "採用情報 新卒採用情報 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "http://www.hokto-kinoko.co.jp/employ/"
-    },
-    {
-      "date": "2026-11-26",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "採用情報 採用情報 新卒採用情報 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.hokto-kinoko.co.jp/employ/"
-    },
-    {
-      "date": "2026-11-26",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "投資家の皆様へ",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.hokto-kinoko.co.jp/corporate/ir/"
-    },
-    {
-      "date": "2026-11-26",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "会員限定情報を受け取る[無料会員登録]",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.hokto-kinoko.co.jp/kaiin/entryconfirm.php"
-    },
-    {
-      "date": "2026-11-26",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "企業情報 企業情報 社長から、皆様へ コーポレート・メッセージ ホクトの目指す姿 会社概要 事業所・グループ企業 世界への展開 役員 ホクトの歴史 ホクトCI ホクト10のキーワード 営業部門 生産部門 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.hokto-kinoko.co.jp/corporate/kigyou/"
-    },
-    {
-      "date": "2026-11-26",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "リアルタイム株価を見る",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://stocks.finance.yahoo.co.jp/stocks/detail/?code=1379.T"
-    },
-    {
-      "date": "2026-11-26",
-      "ticker": "1379.T",
-      "company": "ホクト",
       "title": "ホクト:自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ",
       "source": "TDnet",
       "category": "資本政策",
       "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261126586442.pdf"
-    },
-    {
-      "date": "2026-11-26",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "きのこ総合研究所",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.hokto-kinoko.co.jp/corporate/kenkyu/"
-    },
-    {
-      "date": "2026-11-26",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "お客様相談室",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.hokto-kinoko.co.jp/soudanshitsu/"
-    },
-    {
-      "date": "2026-11-26",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "Language",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.hokto-kinoko.co.jp/lang/"
-    },
-    {
-      "date": "2026-11-26",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "HOKTO 企業情報 企業情報 社長から、皆様へ コーポレート・メッセージ ホクトの目指す姿 会社概要 事業所・グループ企業 世界への展開 役員 ホクトの歴史 ホクトCI ホクト10のキーワード 営業部門 生産部門 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ 投資家の皆様へ 投資家の皆様へ 財務・業績 IR資料 SDGsへの取り組み 株式情報 株主優待制度 株式手続きについて よくある質問 IRカレンダー 電子公告 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ CSR CSR CSR 対談 安全品質マネジメント スポーツ・文化振興 ホクト生物科学振興財団 環境への取組み がん征圧運動 きのこで食育 地域貢献 お客様のご満足のために 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ きのこ総合研究所 きのこ総合研究所 研究所の概要 おいしさへの探求 世界の健康食\"きのこ” 研究者からのメッセージ 独自技術による研究開発 学会・論文発表 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ 採用情報 採用情報 新卒採用情報 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ 商品・レシピ情報 商品・レシピ情報 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ お客様相談室 お客様相談室 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ Language Language English 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ 会員限定情報を受け取る[無料会員登録]",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.hokto-kinoko.co.jp/corporate"
-    },
-    {
-      "date": "2026-11-26",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "HOKTO HOKTO 企業情報 企業情報 社長から、皆様へ コーポレート・メッセージ ホクトの目指す姿 会社概要 事業所・グループ企業 世界への展開 役員 ホクトの歴史 ホクトCI ホクト10のキーワード 営業部門 生産部門 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ 投資家の皆様へ 投資家の皆様へ 財務・業績 IR資料 SDGsへの取り組み 株式情報 株主優待制度 株式手続きについて よくある質問 IRカレンダー 電子公告 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ CSR CSR CSR 対談 安全品質マネジメント スポーツ・文化振興 ホクト生物科学振興財団 環境への取組み がん征圧運動 きのこで食育 地域貢献 お客様のご満足のために 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ きのこ総合研究所 きのこ総合研究所 研究所の概要 おいしさへの探求 世界の健康食\"きのこ” 研究者からのメッセージ 独自技術による研究開発 学会・論文発表 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ 採用情報 採用情報 新卒採用情報 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ 商品・レシピ情報 商品・レシピ情報 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ お客様相談室 お客様相談室 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ Language Language English 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪ 会員限定情報を受け取る[無料会員登録] ログイン リアルタイム株価を見る",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.hokto-kinoko.co.jp"
-    },
-    {
-      "date": "2026-11-26",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "HOKTO",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.hokto-kinoko.co.jp/"
-    },
-    {
-      "date": "2026-11-26",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "CSR CSR CSR 対談 安全品質マネジメント スポーツ・文化振興 ホクト生物科学振興財団 環境への取組み がん征圧運動 きのこで食育 地域貢献 お客様のご満足のために 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の取得結果及び取得終了に関するお知らせ 自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ 2027年3月期第2四半期 決算説明資料 Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027 当社の使用済み培地（廃菌床）を活用した『シン・バイオマス』が『新エネ大賞 経済産業大臣賞』および『第14回プラチナ大賞 優秀賞（農業廃棄物活用賞）』を受賞 ホクトきのこらぼ会員募集中 無料新規会員登録 ログイン 会員限定のプレゼント企画や レシピ保存などうれしい特典がいっぱい♪",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.hokto-kinoko.co.jp/corporate/csr/"
     },
     {
       "date": "2026-11-26",
@@ -397,15 +326,6 @@
       "source": "公式IR",
       "category": "M&A・事業",
       "url": "https://www.kadoya.com/ir/news/%e6%a0%aa%e5%bc%8f%e4%bc%9a%e7%a4%beitg-g%e3%83%9b%e3%83%bc%e3%83%ab%e3%83%87%e3%82%a3%e3%83%b3%e3%82%b0%e3%82%b9%e3%81%ab%e3%82%88%e3%82%8b%e5%85%ac%e9%96%8b%e8%b2%b7%e4%bb%98%e5%b1%8a%e5%87%ba-2/"
-    },
-    {
-      "date": "2026-11-25",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "自己株式立会外買付取引（ＴｏＳＴＮｅＴ－３）による自己株式の買付けに関するお知らせ",
-      "source": "公式IR",
-      "category": "資本政策",
-      "url": "https://ssl4.eir-parts.net/doc/1379/tdnet/2922147/00.pdf"
     },
     {
       "date": "2026-11-25",
@@ -874,132 +794,6 @@
       "source": "TDnet",
       "category": "人事・組織",
       "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261124584761.pdf"
-    },
-    {
-      "date": "2026-11-20",
-      "ticker": "9347.T",
-      "company": "日本管財",
-      "title": "日本管財ＨＤ:自己株式立会外買付取引(ToSTNeT-3)による自己株式の取得結果及び取得終了に関するお知らせ",
-      "source": "TDnet",
-      "category": "資本政策",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261120583891.pdf"
-    },
-    {
-      "date": "2026-11-20",
-      "ticker": "9347.T",
-      "company": "日本管財",
-      "title": "日本管財ホールディングス 自己株式立会外買付取引による自己株式の取得結果及び取得終了に関するお知らせ",
-      "source": "公式IR",
-      "category": "資本政策",
-      "url": "https://www.nkanzaihd.co.jp/news/20261120%e2%91%a1/"
-    },
-    {
-      "date": "2026-11-20",
-      "ticker": "3612.T",
-      "company": "ワールド",
-      "title": "ワールド:共同持株会社における株式報酬制度の導入及びワールドの譲渡制限付株式報酬制度の改定に関するお知らせ",
-      "source": "TDnet",
-      "category": "その他",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261120584052.pdf"
-    },
-    {
-      "date": "2026-11-20",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "ホクト:2027年3月期第2四半期 決算説明資料",
-      "source": "TDnet",
-      "category": "決算・業績",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261119583760.pdf"
-    },
-    {
-      "date": "2026-11-20",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "Financial Results Presentation Materials for the Second Quarter of the Fiscal Year Ending March 31, 2027",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://ssl4.eir-parts.net/doc/1379/ir_material_for_fiscal_ym1/219563/00.pdf"
-    },
-    {
-      "date": "2026-11-20",
-      "ticker": "1379.T",
-      "company": "ホクト",
-      "title": "2027年3月期第2四半期 決算説明資料",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://ssl4.eir-parts.net/doc/1379/ir_material_for_fiscal_ym1/219564/00.pdf"
-    },
-    {
-      "date": "2026-11-20",
-      "ticker": "4665.T",
-      "company": "ダスキン",
-      "title": "ダスキン:2027年3月期 第2四半期（中間期）決算説明資料",
-      "source": "TDnet",
-      "category": "決算・業績",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261119583545.pdf"
-    },
-    {
-      "date": "2026-11-20",
-      "ticker": "4923.T",
-      "company": "コタ",
-      "title": "for SALON 美容室の皆様へ Products 製品 Development & Production ものづくり Salon Search 取扱い店舗 Company & IR 企業・投資家情報 TOP コタについて 会社概要 コタビジョン 沿革 会社案内パンフレット サステナビリティ 直近の事業報告 株主還元 業績ハイライト 業績推移 財務情報 経営指標 IRライブラリー 決算短信・決算説明資料 有価証券報告書 内部統制報告書 株主通信 開示資料（英訳） 株主総会 コーポレートガバナンス 次世代育成支援対策に基づく「行動計画」 女性活躍推進法に基づく「行動計画」 電子公告 免責条項 Recruit 採用情報 FAQ & Contact よくあるご質問 ・お問い合わせ 1 / 3 COTA BEAUTY STORY 美しい髪を育むためのヘアケア情報をお届けし、女性のキレイを応援するWEBマガジン コタ公式ECサイト コタオリジナルスマホ壁紙 PRESENT 「日本パッケージデザイン大賞2027」入選に関するお知らせ COTA Hair Care Class <コタ株式会社 株主様限定>〜髪からもっと美しくなるヘアケア教室 〜 in KYOTO 〜 COTA HEAD SPA PURES コタヘッドスパ ピュレス COTA STYLIST AWARD 2026 中止のお知らせ COTA BEAUTY STORY 美しい髪を育むためのヘアケア情報をお届けし、女性のキレイを応援するWEBマガジン コタ公式ECサイト コタオリジナルスマホ壁紙 PRESENT 「日本パッケージデザイン大賞2027」入選に関するお知らせ COTA Hair Care Class <コタ株式会社 株主様限定>〜髪からもっと美しくなるヘアケア教室 〜 in KYOTO 〜 COTA HEAD SPA PURES コタヘッドスパ ピュレス COTA STYLIST AWARD 2026 中止のお知らせ COTA BEAUTY STORY 美しい髪を育むためのヘアケア情報をお届けし、女性のキレイを応援するWEBマガジン コタ公式ECサイト コタオリジナルスマホ壁紙 PRESENT 「日本パッケージデザイン大賞2027」入選に関するお知らせ COTA Hair Care Class <コタ株式会社 株主様限定>〜髪からもっと美しくなるヘアケア教室 〜 in KYOTO 〜 COTA HEAD SPA PURES コタヘッドスパ ピュレス COTA STYLIST AWARD 2026 中止のお知らせ Item 1 of 7 このたびの「令和8年熊本地震」により、被災されました皆様には心よりお見舞いを申し上げ ますとともに、被災地の皆様のご無事と一日も早い復興を心よりお祈りいたします。 このたびの「令和8年熊本地震」により、被災されました皆様には心よりお見舞いを申し上げ ますとともに、被災地の皆様のご無事と一日も早い復興を心よりお祈りいたします。 〜 非正規販売対策の成果 〜 Salon Search 髪のプロである美容師さんがあなたの髪に合わせたヘアケア方法や あなたらしいヘアスタイルをお教えします。 髪のプロである美容師さんが あなたの髪に合わせたヘアケア方法や あなたらしいヘアスタイルをお教えします。 サロンサーチ カテゴリーから探す シャンプー&トリートメント スキャルプケア スタイリング アウトバストリートメント サロントリートメント カラー＆パーマ すべて Web Factory Tour WEB工場見学 Research Report 研究報告 自然のやさしさと科学の力を融合させながら、徹底したお客様目線で、ニーズに敵った製品開発を日夜追求しています。 品質はもちろん、人にも環境にも安心・安全であることを基本に原料にもこだわり、厳しい品質チェックと改良を幾重にも重ねる地道なプロセスを経て、お客様の髪を芯から美しくする製品が誕生します。 そして、オートメーション化が進んだ生産現場において、今なおきちんと「人の目」と「人の手」を活かしたものづくりを続けながら、ゆるぎない想いが詰まった安心・安全、高品質の製品を作り上げています。 for SALON コタは美容室の経営改善の取り組み、独自に開催するコンテストなど さまざまなコンテンツで美容室のサポートをしております。 コタは美容室の経営改善の取り組み、独自に開催するコンテストなどさまざまなコンテンツで美容室のサポートをしております。 美容室向けコンテンツ ALL COMPANY EVENT IR NEWS RECRUIT IR 12月13日（日）個人投資家向け説明会（神戸）に参加予定です。 IR 自己株式立会外買付取引（ToSTNeT-3）による自己株式の取得結果及び取得終了に関するお知らせ IR 自己株式の取得及び自己株式立会外買付取引（ToSTNeT-3）による 自己株式の買付けに関するお知らせ IR 2027年３月期 第２四半期（中間期）決算を発表いたしました EVENT 12月11日（金）京都で株主様限定イベント「COTA Hair Care Class」を開催 1 2 ... 118 119 Pick Up IR お客さまの個人情報に関するお知らせとお詫び 1 2 3 ... 117 118 119 Top Products Development & Production Salon Search Company & IR Recruit FAQ & Contact for SALON Company & IR コタについて 会社概要 コタビジョン 沿革 会社案内パンフレット サステナビリティ 直近の事業報告 株主還元 業績ハイライト IRライブラリー 株主総会 コーポレートガバナンス 次世代育成支援対策に基づく「行動計画」 女性活躍推進法に基づく「行動計画」 電子公告 免責条項 ご利用規約 ディスクロージャーポリシー プライバシーポリシー ソーシャルメディアポリシー カスタマーハラスメントポリシー 重要なお知らせ © 2026 COTA Co., Ltd.",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.instagram.com/cota_jp/"
-    },
-    {
-      "date": "2026-11-20",
-      "ticker": "4923.T",
-      "company": "コタ",
-      "title": "for SALON 美容室の皆様へ Products 製品 Development & Production ものづくり Salon Search 取扱い店舗 Company & IR 企業・投資家情報 TOP コタについて 会社概要 コタビジョン 沿革 会社案内パンフレット サステナビリティ 直近の事業報告 株主還元 業績ハイライト 業績推移 財務情報 経営指標 IRライブラリー 決算短信・決算説明資料 有価証券報告書 内部統制報告書 株主通信 開示資料（英訳） 株主総会 コーポレートガバナンス 次世代育成支援対策に基づく「行動計画」 女性活躍推進法に基づく「行動計画」 電子公告 免責条項 Recruit 採用情報 FAQ & Contact よくあるご質問 ・お問い合わせ 1 / 3 COTA BEAUTY STORY 美しい髪を育むためのヘアケア情報をお届けし、女性のキレイを応援するWEBマガジン コタ公式ECサイト コタオリジナルスマホ壁紙 PRESENT 「日本パッケージデザイン大賞2027」入選に関するお知らせ COTA Hair Care Class <コタ株式会社 株主様限定>〜髪からもっと美しくなるヘアケア教室 〜 in KYOTO 〜 COTA HEAD SPA PURES コタヘッドスパ ピュレス COTA STYLIST AWARD 2026 中止のお知らせ COTA BEAUTY STORY 美しい髪を育むためのヘアケア情報をお届けし、女性のキレイを応援するWEBマガジン コタ公式ECサイト コタオリジナルスマホ壁紙 PRESENT 「日本パッケージデザイン大賞2027」入選に関するお知らせ COTA Hair Care Class <コタ株式会社 株主様限定>〜髪からもっと美しくなるヘアケア教室 〜 in KYOTO 〜 COTA HEAD SPA PURES コタヘッドスパ ピュレス COTA STYLIST AWARD 2026 中止のお知らせ COTA BEAUTY STORY 美しい髪を育むためのヘアケア情報をお届けし、女性のキレイを応援するWEBマガジン コタ公式ECサイト コタオリジナルスマホ壁紙 PRESENT 「日本パッケージデザイン大賞2027」入選に関するお知らせ COTA Hair Care Class <コタ株式会社 株主様限定>〜髪からもっと美しくなるヘアケア教室 〜 in KYOTO 〜 COTA HEAD SPA PURES コタヘッドスパ ピュレス COTA STYLIST AWARD 2026 中止のお知らせ Item 1 of 7 このたびの「令和8年熊本地震」により、被災されました皆様には心よりお見舞いを申し上げ ますとともに、被災地の皆様のご無事と一日も早い復興を心よりお祈りいたします。 このたびの「令和8年熊本地震」により、被災されました皆様には心よりお見舞いを申し上げ ますとともに、被災地の皆様のご無事と一日も早い復興を心よりお祈りいたします。 〜 非正規販売対策の成果 〜 Salon Search 髪のプロである美容師さんがあなたの髪に合わせたヘアケア方法や あなたらしいヘアスタイルをお教えします。 髪のプロである美容師さんが あなたの髪に合わせたヘアケア方法や あなたらしいヘアスタイルをお教えします。 サロンサーチ カテゴリーから探す シャンプー&トリートメント スキャルプケア スタイリング アウトバストリートメント サロントリートメント カラー＆パーマ すべて Web Factory Tour WEB工場見学 Research Report 研究報告 自然のやさしさと科学の力を融合させながら、徹底したお客様目線で、ニーズに敵った製品開発を日夜追求しています。 品質はもちろん、人にも環境にも安心・安全であることを基本に原料にもこだわり、厳しい品質チェックと改良を幾重にも重ねる地道なプロセスを経て、お客様の髪を芯から美しくする製品が誕生します。 そして、オートメーション化が進んだ生産現場において、今なおきちんと「人の目」と「人の手」を活かしたものづくりを続けながら、ゆるぎない想いが詰まった安心・安全、高品質の製品を作り上げています。 for SALON コタは美容室の経営改善の取り組み、独自に開催するコンテストなど さまざまなコンテンツで美容室のサポートをしております。 コタは美容室の経営改善の取り組み、独自に開催するコンテストなどさまざまなコンテンツで美容室のサポートをしております。 美容室向けコンテンツ ALL COMPANY EVENT IR NEWS RECRUIT IR 12月13日（日）個人投資家向け説明会（神戸）に参加予定です。 IR 自己株式立会外買付取引（ToSTNeT-3）による自己株式の取得結果及び取得終了に関するお知らせ IR 自己株式の取得及び自己株式立会外買付取引（ToSTNeT-3）による 自己株式の買付けに関するお知らせ IR 2027年３月期 第２四半期（中間期）決算を発表いたしました EVENT 12月11日（金）京都で株主様限定イベント「COTA Hair Care Class」を開催 1 2 ... 118 119 Pick Up IR お客さまの個人情報に関するお知らせとお詫び 1 2 3 ... 117 118 119 Top Products Development & Production Salon Search Company & IR Recruit FAQ & Contact for SALON Company & IR コタについて 会社概要 コタビジョン 沿革 会社案内パンフレット サステナビリティ 直近の事業報告 株主還元 業績ハイライト IRライブラリー 株主総会 コーポレートガバナンス 次世代育成支援対策に基づく「行動計画」 女性活躍推進法に基づく「行動計画」 電子公告 免責条項 ご利用規約 ディスクロージャーポリシー プライバシーポリシー ソーシャルメディアポリシー カスタマーハラスメントポリシー 重要なお知らせ © 2026 COTA Co., Ltd.",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://www.youtube.com/channel/UCpaOGKF3yjk7xjpCGNpKjaQ"
-    },
-    {
-      "date": "2026-11-20",
-      "ticker": "4923.T",
-      "company": "コタ",
-      "title": "for SALON 美容室の皆様へ Products 製品 Development & Production ものづくり Salon Search 取扱い店舗 Company & IR 企業・投資家情報 TOP コタについて 会社概要 コタビジョン 沿革 会社案内パンフレット サステナビリティ 直近の事業報告 株主還元 業績ハイライト 業績推移 財務情報 経営指標 IRライブラリー 決算短信・決算説明資料 有価証券報告書 内部統制報告書 株主通信 開示資料（英訳） 株主総会 コーポレートガバナンス 次世代育成支援対策に基づく「行動計画」 女性活躍推進法に基づく「行動計画」 電子公告 免責条項 Recruit 採用情報 FAQ & Contact よくあるご質問 ・お問い合わせ 1 / 3 COTA BEAUTY STORY 美しい髪を育むためのヘアケア情報をお届けし、女性のキレイを応援するWEBマガジン コタ公式ECサイト コタオリジナルスマホ壁紙 PRESENT 「日本パッケージデザイン大賞2027」入選に関するお知らせ COTA Hair Care Class <コタ株式会社 株主様限定>〜髪からもっと美しくなるヘアケア教室 〜 in KYOTO 〜 COTA HEAD SPA PURES コタヘッドスパ ピュレス COTA STYLIST AWARD 2026 中止のお知らせ COTA BEAUTY STORY 美しい髪を育むためのヘアケア情報をお届けし、女性のキレイを応援するWEBマガジン コタ公式ECサイト コタオリジナルスマホ壁紙 PRESENT 「日本パッケージデザイン大賞2027」入選に関するお知らせ COTA Hair Care Class <コタ株式会社 株主様限定>〜髪からもっと美しくなるヘアケア教室 〜 in KYOTO 〜 COTA HEAD SPA PURES コタヘッドスパ ピュレス COTA STYLIST AWARD 2026 中止のお知らせ COTA BEAUTY STORY 美しい髪を育むためのヘアケア情報をお届けし、女性のキレイを応援するWEBマガジン コタ公式ECサイト コタオリジナルスマホ壁紙 PRESENT 「日本パッケージデザイン大賞2027」入選に関するお知らせ COTA Hair Care Class <コタ株式会社 株主様限定>〜髪からもっと美しくなるヘアケア教室 〜 in KYOTO 〜 COTA HEAD SPA PURES コタヘッドスパ ピュレス COTA STYLIST AWARD 2026 中止のお知らせ Item 1 of 7 このたびの「令和8年熊本地震」により、被災されました皆様には心よりお見舞いを申し上げ ますとともに、被災地の皆様のご無事と一日も早い復興を心よりお祈りいたします。 このたびの「令和8年熊本地震」により、被災されました皆様には心よりお見舞いを申し上げ ますとともに、被災地の皆様のご無事と一日も早い復興を心よりお祈りいたします。 〜 非正規販売対策の成果 〜 Salon Search 髪のプロである美容師さんがあなたの髪に合わせたヘアケア方法や あなたらしいヘアスタイルをお教えします。 髪のプロである美容師さんが あなたの髪に合わせたヘアケア方法や あなたらしいヘアスタイルをお教えします。 サロンサーチ カテゴリーから探す シャンプー&トリートメント スキャルプケア スタイリング アウトバストリートメント サロントリートメント カラー＆パーマ すべて Web Factory Tour WEB工場見学 Research Report 研究報告 自然のやさしさと科学の力を融合させながら、徹底したお客様目線で、ニーズに敵った製品開発を日夜追求しています。 品質はもちろん、人にも環境にも安心・安全であることを基本に原料にもこだわり、厳しい品質チェックと改良を幾重にも重ねる地道なプロセスを経て、お客様の髪を芯から美しくする製品が誕生します。 そして、オートメーション化が進んだ生産現場において、今なおきちんと「人の目」と「人の手」を活かしたものづくりを続けながら、ゆるぎない想いが詰まった安心・安全、高品質の製品を作り上げています。 for SALON コタは美容室の経営改善の取り組み、独自に開催するコンテストなど さまざまなコンテンツで美容室のサポートをしております。 コタは美容室の経営改善の取り組み、独自に開催するコンテストなどさまざまなコンテンツで美容室のサポートをしております。 美容室向けコンテンツ ALL COMPANY EVENT IR NEWS RECRUIT IR 12月13日（日）個人投資家向け説明会（神戸）に参加予定です。 IR 自己株式立会外買付取引（ToSTNeT-3）による自己株式の取得結果及び取得終了に関するお知らせ IR 自己株式の取得及び自己株式立会外買付取引（ToSTNeT-3）による 自己株式の買付けに関するお知らせ IR 2027年３月期 第２四半期（中間期）決算を発表いたしました EVENT 12月11日（金）京都で株主様限定イベント「COTA Hair Care Class」を開催 1 2 ... 118 119 Pick Up IR お客さまの個人情報に関するお知らせとお詫び 1 2 3 ... 117 118 119 Top Products Development & Production Salon Search Company & IR Recruit FAQ & Contact for SALON Company & IR コタについて 会社概要 コタビジョン 沿革 会社案内パンフレット サステナビリティ 直近の事業報告 株主還元 業績ハイライト IRライブラリー 株主総会 コーポレートガバナンス 次世代育成支援対策に基づく「行動計画」 女性活躍推進法に基づく「行動計画」 電子公告 免責条項 ご利用規約 ディスクロージャーポリシー プライバシーポリシー ソーシャルメディアポリシー カスタマーハラスメントポリシー 重要なお知らせ © 2026 COTA Co., Ltd.",
-      "source": "公式IR",
-      "category": "決算・業績",
-      "url": "https://cota-store.jp/shop/"
-    },
-    {
-      "date": "2026-11-20",
-      "ticker": "4923.T",
-      "company": "コタ",
-      "title": "12月13日（日）個人投資家向け説明会（神戸）に参加予定です。",
-      "source": "公式IR",
-      "category": "その他",
-      "url": "https://www.kojintoushika.com/12-13-sun-kobe/"
-    },
-    {
-      "date": "2026-11-20",
-      "ticker": "4326.T",
-      "company": "インテージ",
-      "title": "インテージＨＤ:譲渡制限付株式報酬としての自己株式の処分の払込完了に関するお知らせ",
-      "source": "TDnet",
-      "category": "資本政策",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261119583554.pdf"
-    },
-    {
-      "date": "2026-11-20",
-      "ticker": "2612.T",
-      "company": "かどや",
-      "title": "かどや製油:（変更）「株式会社ITG-Gホールディングスによる当社株式に対する公開買付けに関する賛同の意見表明及び応募推奨のお知らせ」の一部変更に関するお知らせ",
-      "source": "TDnet",
-      "category": "M&A・事業",
-      "url": "https://webapi.yanoshin.jp/rd.php?https://www.release.tdnet.info/inbs/140120261120584380.pdf"
-    },
-    {
-      "date": "2026-11-20",
-      "ticker": "2612.T",
-      "company": "かどや",
-      "title": "2026.11.20 NEW （変更）「 株式会社ITG-Gホールディングスによる当社株式に対する公開買付けに関する賛同の意見表明及び応募推奨のお知らせ」の一部変更に関するお知らせ",
-      "source": "公式IR",
-      "category": "M&A・事業",
-      "url": "https://www.kadoya.com/ir/news/%ef%bc%88%e5%a4%89%e6%9b%b4%ef%bc%89%e3%80%8c-%e6%a0%aa%e5%bc%8f%e4%bc%9a%e7%a4%beitg-g%e3%83%9b%e3%83%bc%e3%83%ab%e3%83%87%e3%82%a3%e3%83%b3%e3%82%b0%e3%82%b9%e3%81%ab%e3%82%88%e3%82%8b%e5%bd%93-4/"
     }
   ]
 }
